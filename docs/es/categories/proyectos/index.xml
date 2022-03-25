@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proyectos on Brewing Cats</title>
+    <link>https://brewingcats.com/es/categories/proyectos/</link>
+    <description>Recent content in proyectos on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2020 22:58:10 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/categories/proyectos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consultoría</title>
+      <link>https://brewingcats.com/es/posts/projects/consulting/</link>
+      <pubDate>Mon, 27 Apr 2020 22:58:10 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/consulting/</guid>
+      <description> Servicios de Consultoría Ofrecemos servicios de consultoría en las siguientes areas:
+ Creación de sitios web (manejo, codificación, hosting, telemetría, https, etc.) PowerShell, C#, Java, TypeScript Tableau básico   Contáctenos para más información
+ Créditos de la Imagen: Unsplash: Pluma sobre un cuaderno imagen de @faceline    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+    </item>
+    
+  </channel>
+</rss>

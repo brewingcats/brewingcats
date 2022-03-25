@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proyectos on Brewing Cats</title>
+    <link>https://brewingcats.com/es/tags/proyectos/</link>
+    <description>Recent content in proyectos on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2020 22:58:10 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/tags/proyectos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consultoría</title>
+      <link>https://brewingcats.com/es/posts/projects/consulting/</link>
+      <pubDate>Mon, 27 Apr 2020 22:58:10 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/consulting/</guid>
+      <description> Servicios de Consultoría Ofrecemos servicios de consultoría en las siguientes areas:
+ Creación de sitios web (manejo, codificación, hosting, telemetría, https, etc.) PowerShell, C#, Java, TypeScript Tableau básico   Contáctenos para más información
+ Créditos de la Imagen: Unsplash: Pluma sobre un cuaderno imagen de @faceline    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+    </item>
+    
+    <item>
+      <title>Nuevo Jam Stack</title>
+      <link>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</link>
+      <pubDate>Sun, 19 Apr 2020 17:24:32 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</guid>
+      <description>La versión anterior de brewingcats.com se construyó sobre un diferente JAM Stack , y en particular en un diferente Generador de Sitio Estático . Construir brewingcats.com sobre Gatsby nos permitió adquirir bastante experiencia y nos dejó hacer uso de nuestro conocimiento en React para aplicarlo al sitio. React es parte central de la estructura del sitio, además tuvimos la oportunidad de aprender el sistema de querying de GraphQL para llevar a cabo operaciones básicas</description>
+    </item>
+    
+    <item>
+      <title>Artículo Inicial</title>
+      <link>https://brewingcats.com/es/posts/projects/uncategorized/my-first-post/</link>
+      <pubDate>Tue, 14 Apr 2020 16:18:49 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/uncategorized/my-first-post/</guid>
+      <description>Este artículo inicial ha sido escrito en Markdown 😄
+Lista de elementos a evaluar:
+ ✅ Inserción de JavaScript personalizado que incluya: ✅ Vizzes embebidas de Tableau (se logra con parciales) ✅ Instagram embebido ( built-in shortcode ) ✅ Tablas de AirTable embebidas ✅ Telemetría personalizada ( librerías con frontmatter ) ✅ Google Ads (via parciales ) ✅ Comentarios via Disqus (soporte nativo) ✅ Share This botones solciales (via parciales) ✅ Google Analytics (via parciales) ✅ Giphy embebido (via parciales) ✅ Soporte multi-lenguage (soporte nativo)  Contenidos:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Brewing Cats</title>
+    <link>https://brewingcats.com/posts/</link>
+    <description>Recent content in Posts on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2020 13:49:20 -0700</lastBuildDate><atom:link href="https://brewingcats.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instagram</title>
+      <link>https://brewingcats.com/posts/instagram/</link>
+      <pubDate>Tue, 14 Jan 2020 12:08:35 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/posts/instagram/</guid>
+      <description>Instagram-Auto-Embed
+window.AutoInstagram.Control.Initialize(&#34;701233337122574&#34;, &#34;cb323292940db3edd2ab47777543b4f7&#34;); if (window.AutoInstagram.Control.LoadFromParam() === &#39;&#39;) { window.AutoInstagram.Control.QueryAndAddInstagramPost( &#39;CDqPPKxp1cT&#39;, &#34;Instagram-Auto-Embed&#34; ); } else { window.AutoInstagram.Control.QueryAndAddInstagramPost( window.AutoInstagram.Control.LoadFromParam(), &#34;Instagram-Auto-Embed&#34; ); } BrewingCatsCore.Logger.traceInfo( `AutoInstagram Component`, &#39;component.autoinstagram&#39;, &#39;tagId_a&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;AutoInstagram&#39; } );  </description>
+    </item>
+    
+  </channel>
+</rss>

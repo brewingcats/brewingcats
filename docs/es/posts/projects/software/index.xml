@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Brewing Cats</title>
+    <link>https://brewingcats.com/es/posts/projects/software/</link>
+    <description>Recent content in Software on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 May 2020 18:51:21 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/posts/projects/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creador de Polígonos</title>
+      <link>https://brewingcats.com/es/posts/projects/software/polygonmaker/</link>
+      <pubDate>Tue, 15 Dec 2020 18:13:15 -0800</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/polygonmaker/</guid>
+      <description>En este artículo encontrarás que puedes dibujar polígonos sobre la imagen de tu elección. Lo anterior tiene varias utilidades, en nuestro caso nos ha servido para obtener las coordenadas de los vértices para usarlas en visualizaciones de Tableau. Con las coordenadas de los vertices podemos dibujar polígonos sobre imagenes en Tableau con el propósito de crear zonas o áreas que pueden ser correlacionadas de distintas formas. Este artículo muestra un ejemplo del uso de polígonos</description>
+    </item>
+    
+    <item>
+      <title>Extractor de Código de Tableau Share</title>
+      <link>https://brewingcats.com/es/posts/projects/software/tableauparser/</link>
+      <pubDate>Thu, 20 Aug 2020 17:05:47 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/tableauparser/</guid>
+      <description>Anteriormente creamos un shortcode para embeber Vizzes de Tableau en sitios web basados en el Framework de Hugo, el uso de este es bastante simple y conveniente, sin embargo para poder hacer uso de el necesitamos saber de antemano ciertos campos que extraemos manualmente del código para compartir que nos da Tableau. Abajo los pasos para obtener este código
+Añadiendo el ShortCode a tu Sitio Basado en Hugo Para agregar soporte para embeber vizzes de Tableau sencillamente copia nuestro shortcode en el siguiente directorio dentro de tu sitio /layouts/shortcodes/tableau.</description>
+    </item>
+    
+    <item>
+      <title>Instaparser</title>
+      <link>https://brewingcats.com/es/posts/projects/software/instaparser/</link>
+      <pubDate>Sat, 08 Aug 2020 21:13:41 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/instaparser/</guid>
+      <description>Note: Este contenido es obsoleto y lo hemos dejado como nota de referencia
+Sencilla utilidad para obtener ids the fotos de Instagram. Permite embeber fotos de Instagram en nuestra página web la cuál puede ser a su vez embebida en otros lugares (como Vizzes de Tableau 😉 )
+Instrucciones:
+ Copie el URL de una foto de Instagram e ingréselo en el campo de abajo Podrá ver el fragmento que identifica la foto que puede ser usado con nuestro sitio especial de Instagram , puede agregar el siguiente fragmento a la URL ?</description>
+    </item>
+    
+    <item>
+      <title>Nuevo Jam Stack</title>
+      <link>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</link>
+      <pubDate>Sun, 19 Apr 2020 17:24:32 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</guid>
+      <description>La versión anterior de brewingcats.com se construyó sobre un diferente JAM Stack , y en particular en un diferente Generador de Sitio Estático . Construir brewingcats.com sobre Gatsby nos permitió adquirir bastante experiencia y nos dejó hacer uso de nuestro conocimiento en React para aplicarlo al sitio. React es parte central de la estructura del sitio, además tuvimos la oportunidad de aprender el sistema de querying de GraphQL para llevar a cabo operaciones básicas</description>
+    </item>
+    
+    <item>
+      <title>Botw Signs</title>
+      <link>https://brewingcats.com/es/posts/projects/software/botwsign/</link>
+      <pubDate>Tue, 11 Jan 2000 19:30:13 -0800</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/projects/software/botwsign/</guid>
+      <description>$(document).ready(() = { let transArea = $(&#39;[tagId=&#34;transResult-botw-bare&#34;]&#39;); transArea.html(&#39;&#39;); let urlParams = new URLSearchParams(window.location.search); let text = &#39;&#39;; text = urlParams.get(&#39;text&#39;); if (text === &#39;&#39; || text === null || text === undefined) { return; } let styleNumber = 1; if (urlParams.has(&#39;style&#39;)) { let style2Param = urlParams.get(&#39;style&#39;); if (style2Param == &#39;2&#39;) { styleNumber = 2; } else { BrewingCatsCore.Logger.traceInfo( `BOTWBare Component`, &#39;component.botwbare&#39;, &#39;tagId_a&#39;, &#39;Invalid style from URL&#39;, { &#39;component&#39;: &#39;BOTWBare&#39;, &#39;style&#39;: style2Param } ); } } console.</description>
+    </item>
+    
+  </channel>
+</rss>

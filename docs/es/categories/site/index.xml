@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site on Brewing Cats</title>
+    <link>https://brewingcats.com/es/categories/site/</link>
+    <description>Recent content in site on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Oct 2021 17:20:17 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/categories/site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Árbol de Enlaces</title>
+      <link>https://brewingcats.com/es/posts/site/linktree/</link>
+      <pubDate>Tue, 05 Oct 2021 17:20:17 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/site/linktree/</guid>
+      <description>Lista de Contenido Promovido  Perfil de OpenSea   Brewing Cats en OpenSea  Leer más      Proyectos NFT   Aprende acerca de nuestros proyectos usando NFT  Leer más      Lotería Mexicana en NFT Primera Edición   ¡Bienvenido al Juego de Lotería Mexicana en su version NFT!  Leer más      Ola Interpreting   Sitio socio de Ola Interpreting LLC, traductores certificados  Leer más      HugoBelin.</description>
+    </item>
+    
+    <item>
+      <title>Telemetría</title>
+      <link>https://brewingcats.com/es/posts/site/telemetry/</link>
+      <pubDate>Wed, 03 Feb 2021 21:38:12 -0800</pubDate>
+      
+      <guid>https://brewingcats.com/es/posts/site/telemetry/</guid>
+      <description>Para poder medir nuestro criterio de exito en nuestro website (prover una experiencia deleitable a nuestros usuarios) necesitamos conocer y entender como es este sitio usado. Planeamos lograrlo mediante el uso de datos de telemetría, esta información nos proveerá detalles sobre problemas de usabilidad, el tipo de contenido que los usuarios gustan más así como otro tipo de problemas
+El uso de telemetría es una práctica común en la mayoría de sitios web, hoy en día ni siquiera se informa a los usuarios sobre esta práctica, mucho menos se les deja saber el uso que se da a esta información (por ejemplo el análisis que se da y si se vende para su uso en publicidad, o si se utiliza para generar un perfil individual y recolectar comportamiento sobre el usurio).</description>
+    </item>
+    
+  </channel>
+</rss>

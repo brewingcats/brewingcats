@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Brewing Cats</title>
+    <link>https://brewingcats.com/posts/projects/software/</link>
+    <description>Recent content in Software on Brewing Cats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 May 2020 18:51:17 -0700</lastBuildDate><atom:link href="https://brewingcats.com/posts/projects/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polygon Maker</title>
+      <link>https://brewingcats.com/posts/projects/software/polygonmaker/</link>
+      <pubDate>Tue, 15 Dec 2020 18:13:10 -0800</pubDate>
+      
+      <guid>https://brewingcats.com/posts/projects/software/polygonmaker/</guid>
+      <description>This post allows you to draw polygons on top of a picture of your choice. This comes handy for several scenarios, in our case we have used it to get path coordinates for Tableau visualizations. With the path coordinates we were able to draw the resulting polygons on top of the images in Tableau with the ability to correlate this data for zones or areas that we wanted. To view the usage sample check out this post.</description>
+    </item>
+    
+    <item>
+      <title>Tableau Embed Parser</title>
+      <link>https://brewingcats.com/posts/projects/software/tableauparser/</link>
+      <pubDate>Thu, 20 Aug 2020 17:05:15 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/posts/projects/software/tableauparser/</guid>
+      <description>We&amp;rsquo;ve created a shortcode for embedding Tableau Vizzes into Hugo Framework based websites, it is quite simple to use and very convenient, however before being able to use it you need to know few fields which have to be retrieved from the share code provided by Tableau. Below are the steps to retrieve the code
+Adding the ShortCode to your Hugo Site To add support for embedding Tableau Public vizzes simply copy our shortcode into the following path /layouts/shortcodes/tableau.</description>
+    </item>
+    
+    <item>
+      <title>Instagram Parser</title>
+      <link>https://brewingcats.com/posts/projects/software/instaparser/</link>
+      <pubDate>Sat, 08 Aug 2020 21:13:38 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/posts/projects/software/instaparser/</guid>
+      <description>Note: This content is deprecated, we&amp;rsquo;re leaving this for the sake of history
+Very simple utility to parse Instagram post IDs. It allows to embed Instagram posts into our web page which can in turn be embedded in other places (like Tableau Vizzes 😉 )
+Instructions:
+ Copy an Instagram post URL and paste it to the input field below You will get the fragment that can work with our special Instagram Post , you can add the following code to that URL ?</description>
+    </item>
+    
+    <item>
+      <title>New Jam Stack</title>
+      <link>https://brewingcats.com/posts/projects/software/new-jam-stack/</link>
+      <pubDate>Sun, 19 Apr 2020 17:24:25 -0700</pubDate>
+      
+      <guid>https://brewingcats.com/posts/projects/software/new-jam-stack/</guid>
+      <description>Previous version of brewingcats.com was built on a different JAM Stack , in particular a different Static Site Generator . Building brewingcats.com on Gatsby on Gatsby brought us a lot of experience and allowed us to make use of our knowledge in React and apply it to the website. React is core to the structure of the site, we also had the opportunity of learning GraphQL querying system to perform basic operations</description>
+    </item>
+    
+    <item>
+      <title>Botw Signs</title>
+      <link>https://brewingcats.com/posts/projects/software/botwsign/</link>
+      <pubDate>Tue, 11 Jan 2000 19:30:11 -0800</pubDate>
+      
+      <guid>https://brewingcats.com/posts/projects/software/botwsign/</guid>
+      <description>$(document).ready(() = { let transArea = $(&#39;[tagId=&#34;transResult-botw-bare&#34;]&#39;); transArea.html(&#39;&#39;); let urlParams = new URLSearchParams(window.location.search); let text = &#39;&#39;; text = urlParams.get(&#39;text&#39;); if (text === &#39;&#39; || text === null || text === undefined) { return; } let styleNumber = 1; if (urlParams.has(&#39;style&#39;)) { let style2Param = urlParams.get(&#39;style&#39;); if (style2Param == &#39;2&#39;) { styleNumber = 2; } else { BrewingCatsCore.Logger.traceInfo( `BOTWBare Component`, &#39;component.botwbare&#39;, &#39;tagId_a&#39;, &#39;Invalid style from URL&#39;, { &#39;component&#39;: &#39;BOTWBare&#39;, &#39;style&#39;: style2Param } ); } } console.</description>
+    </item>
+    
+  </channel>
+</rss>

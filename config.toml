@@ -1,0 +1,71 @@
+baseURL = "https://brewingcats.com/"
+languageCode = "en-us"
+title = "Brewing Cats"
+theme = "ananke"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+SectionPagesMenu = "main"
+Paginate = 15 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = "UA-85767008-3"
+enableRobotsTXT = true
+enableEmoji = true
+disqusShortname = "brewingcats"
+publishDir = "docs"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[languages]
+  [languages.en]
+    [languages.en.params]
+      description = "We brew delightful software"
+  [languages.es]
+    [languages.es.params]
+      description = "Creamos software exquisito"
+
+[params]
+  useGenericGdpr = false
+  googleAnalytics = "UA-85767008-3"
+  favicon = "images/favicon.ico"
+  facebook = "https://www.facebook.com/Brewing-Cats-2094354960657959"
+  twitter = "https://twitter.com/brewingcats"
+  instagram = "https://www.instagram.com/brewingcats/"
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  logo = "/images/BrewingCatsLogo.png"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/BrewingCatsMain.jpg"
+  recent_posts_number = 15
+  #mainSections = ["software", "uncategorized", "site"]
+  env = "production"
+  theme_color = '255, 153, 0'
+  #link_hover = '#EFFF00' # yellow
+  link_hover = '#C00000' # dark red
+  #link_hover = '#DE1F1F' # red
+  #link_hover = '#007bff' # blue
+  #link_hover = '#00802B' # green
+  siteRef = "brewingcats.com"
+  fbAppId = "701233337122574"
+  fbTokenId = "cb323292940db3edd2ab47777543b4f7"
+  telemetryUrl = "https://us-central1-brewingcats.cloudfunctions.net/productionLogger"
+  telemetryVizId = "viz1613958994931"
+  telemetryVizPre = "Br"
+  telemetryVizName = "BrewingCats-ProductionTelemetry"
+  telemetryVizView = "Analysis"
+  statsUrl = "https://us-central1-brewingcats.cloudfunctions.net/stats"
+  siteEnv = "production"
+  referral = "https://brewingcats.com"
+  useFooterStats = "true"
+  useFooterReferral = "true"
+  siteVersion = "3.27.27"
+  siteRelease = "Han Solo"
