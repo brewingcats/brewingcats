@@ -1,7 +1,7 @@
 ---
 title: "Opinión sobre Películas"
 date: 2020-05-16T13:35:38-07:00
-draft: false
+draft: true
 author: Hugo Belin
 featured_image: '/images/movietheater.jpg'
 type: section
