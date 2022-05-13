@@ -32,6 +32,21 @@
                 href="https://brewingcats.com/es/tags/"
                 />
   </url><url>
+    <loc>https://brewingcats.com/es/posts/projects/uncategorized/latestnews/</loc>
+    <lastmod>2021-10-20T11:55:10-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://brewingcats.com/posts/projects/uncategorized/latestnews/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://brewingcats.com/es/posts/projects/uncategorized/latestnews/"
+                />
+  </url><url>
     <loc>https://brewingcats.com/es/tags/uncategorized/</loc>
     <lastmod>2021-10-20T11:55:10-07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -62,19 +77,19 @@
                 href="https://brewingcats.com/es/categories/uncategorized/"
                 />
   </url><url>
-    <loc>https://brewingcats.com/es/posts/projects/uncategorized/latestnews/</loc>
-    <lastmod>2021-10-20T11:55:10-07:00</lastmod>
+    <loc>https://brewingcats.com/es/posts/site/linktree/</loc>
+    <lastmod>2021-10-05T17:20:17-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brewingcats.com/posts/projects/uncategorized/latestnews/"
+                href="https://brewingcats.com/posts/site/linktree/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://brewingcats.com/es/posts/projects/uncategorized/latestnews/"
+                href="https://brewingcats.com/es/posts/site/linktree/"
                 />
   </url><url>
     <loc>https://brewingcats.com/es/tags/site/</loc>
@@ -105,21 +120,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://brewingcats.com/es/categories/site/"
-                />
-  </url><url>
-    <loc>https://brewingcats.com/es/posts/site/linktree/</loc>
-    <lastmod>2021-10-05T17:20:17-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://brewingcats.com/posts/site/linktree/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://brewingcats.com/es/posts/site/linktree/"
                 />
   </url><url>
     <loc>https://brewingcats.com/es/posts/projects/merchandise/nft/lottery/</loc>

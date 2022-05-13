@@ -7,10 +7,12 @@
     <title>Roadmap | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Upcoming features are outlined here">
-    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Hugo 0.98.0" />
     
     
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+    
+      <meta name="robots" content="index, follow">
     
 
     
@@ -18,7 +20,8 @@
 
 
 
-
+    
+    
     
       
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -38,7 +41,7 @@
 <meta itemprop="name" content="Roadmap">
 <meta itemprop="description" content="Upcoming features are outlined here"><meta itemprop="datePublished" content="2020-05-05T21:53:43-07:00" />
 <meta itemprop="dateModified" content="2020-05-05T21:53:43-07:00" />
-<meta itemprop="wordCount" content="121">
+<meta itemprop="wordCount" content="168">
 <meta itemprop="keywords" content="site," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Roadmap"/>
 <meta name="twitter:description" content="Upcoming features are outlined here"/>
@@ -75,15 +78,10 @@ if (!doNotTrack) {
       gtag('config', 'UA-85767008-3');
     </script>
     
-    <script type='text/javascript' src="/javascript/autoinstagram.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/headparser.js#3.28.28" ></script>
+    <script type='text/javascript' src="/javascript/autoinstagram.js#4.30.30" ></script>
+    <script type='text/javascript' src="/javascript/headparser.js#4.30.30" ></script>
     
-    <script type='text/javascript' src="/javascript/config.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/interfaces.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/util.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/logger.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/gdpr.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/control.js#3.28.28" ></script> 
+    <script type='text/javascript' src="/javascript/bcats.js#4.30.30" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -95,10 +93,11 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '3.28.28';
+      BrewingCatsCore.Config.SiteVersion = '4.30.30';
+      BrewingCatsCore.Config.StatsMode = 'Stats2';
       
       BrewingCatsCore.Control.Init();
-      let version = '3.28.28';
+      let version = '4.30.30';
       let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
       let timeZoneMsg = `UTC+${timeZone}`;
       if (timeZone < 0) {
@@ -121,7 +120,7 @@ if (!doNotTrack) {
 
       BrewingCatsCore.Control.UpdateStats((stats) => {
         BrewingCatsCore.Logger.traceInfo(
-          `Loading: ${window.location.href}`,
+          `Stats for: ${window.location.href}`,
           'document.body',
           'tagId_12',
           'Bootstrap',
@@ -217,6 +216,7 @@ if (!doNotTrack) {
 </span></a>
   
 </div>
+
     </div>
   </div>
 </nav>
@@ -247,7 +247,7 @@ if (!doNotTrack) {
           Roadmap
         </h1>
       </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
         <p>This website is created over a common core which is used for other websites. It packs specific features and functionality that make
 
 
@@ -272,28 +272,77 @@ style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; 
 onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
 onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Ananke Theme</a>
 </p>
-<p>This post showcases the completed work as well as the upcoming features. These can be tracked in the following AirTable board:</p>
-<p>
+<p>This post showcases the completed work as well as the upcoming features. These can be tracked in the following 
 
-<div>
-  <script src="https://trello.com/b/xcEx1Xjz.js"></script>
-  <script>
-    $('article').css('max-width', '100%');
-  </script>
-</div>
+
+<a href="https://coda.io/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/coda.io\/', 'Coda')" 
+style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Coda</a>
+ boards:</p>
+
+
+
+
+
+
+<iframe id="a2a2fda9944481ba416bed2fc38402266" src="https://coda.io/embed/fZg2bwTAZP/_sucpe?viewMode=embedplay&amp;hideSections=true" width="1000" height="800" style="ZgotmplZ" frameborder="0" marginheight="0" marginwidth="0" frameborder='0' allow="fullscreen">Loading…</iframe>
+<script>
+  (() => {
+    let paramStyle = 'max-width:100%;';
+    let styles = paramStyle.split(';');
+    for (let i = 0; i < styles.length; i++) {
+      let stylePair = styles[i].split(':');
+      document.querySelector('#a2a2fda9944481ba416bed2fc38402266').style[stylePair[0]] = stylePair[1];
+    }
+  })();
+</script>
+
 <script>
   BrewingCatsCore.Logger.traceInfo(
-    `Trello Component`,
-    'component.trello',
-    'tagId_l',
+    `iframe Component`,
+    'component.iframe',
+    'tagId_15',
     'ComponentSetup',
     {
-      'component': 'Trello',
-      'boardId': 'xcEx1Xjz'
+      'component': 'iframe',
+      'src': 'https:\/\/coda.io\/embed\/fZg2bwTAZP\/_sucpe?viewMode=embedplay\u0026hideSections=true'
     }
   );
 </script>
-<br /></p>
+<br>
+
+
+
+
+
+
+<iframe id="a2a2fda9944481ba416bed2fc38402266" src="https://coda.io/embed/bNNCG5bcPs/_suz9c?viewMode=embedplay&amp;hideSections=true" width="1000" height="800" style="ZgotmplZ" frameborder="0" marginheight="0" marginwidth="0" frameborder='0' allow="fullscreen">Loading…</iframe>
+<script>
+  (() => {
+    let paramStyle = 'max-width:100%;';
+    let styles = paramStyle.split(';');
+    for (let i = 0; i < styles.length; i++) {
+      let stylePair = styles[i].split(':');
+      document.querySelector('#a2a2fda9944481ba416bed2fc38402266').style[stylePair[0]] = stylePair[1];
+    }
+  })();
+</script>
+
+<script>
+  BrewingCatsCore.Logger.traceInfo(
+    `iframe Component`,
+    'component.iframe',
+    'tagId_15',
+    'ComponentSetup',
+    {
+      'component': 'iframe',
+      'src': 'https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suz9c?viewMode=embedplay\u0026hideSections=true'
+    }
+  );
+</script>
+<br>
+<br />
 <p>
 
 
@@ -415,7 +464,7 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Ananke Theme</a>
             style="color: rgb(200, 200, 200); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
             onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
             onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">BCats</a>
-          Version: 3.28.28 Release: Han Solo Site Views: <span tag-id="site-page-views-footer">0</span>
+          Version: 4.30.30 Release: Ben Solo Site Views: <span tag-id="site-page-views-footer">0</span>
         </small>
         
       </code>
@@ -453,7 +502,8 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Ananke Theme</a>
 </svg>
 </span></a>
   
-</div></div>
+</div>
+</div>
   </div>
 </footer>
 

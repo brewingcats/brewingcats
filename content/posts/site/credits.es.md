@@ -16,7 +16,7 @@ Hosting, frameworks, todos reconocidos aqui:
 
 {{< head  3 "Hosting, Librerías, Frameworks y otras Technologías" >}}
 
-{{< airtable shraGTO9M4qs0Th5v purple >}}
+{{< iframe src="https://coda.io/embed/bNNCG5bcPs/_suqXw?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
 
 {{< head 3 "Media" >}}
 - {{< link "https://unsplash.com/photos/WI1MnnzkaZU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" "Unsplash: Beer Collection" >}} - 

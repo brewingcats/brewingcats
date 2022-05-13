@@ -109,8 +109,8 @@ Instructions:
       <pubDate>Tue, 05 May 2020 21:53:43 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/roadmap/</guid>
-      <description>This website is created over a common core which is used for other websites. It packs specific features and functionality that make Brewing Cats a better site. Brewing Cats Core augments the base functionality from our main repo based on Hugo using Ananke Theme This post showcases the completed work as well as the upcoming features. These can be tracked in the following AirTable board:
-    $(&#39;article&#39;).css(&#39;max-width&#39;, &#39;100%&#39;);    BrewingCatsCore.</description>
+      <description>This website is created over a common core which is used for other websites. It packs specific features and functionality that make Brewing Cats a better site. Brewing Cats Core augments the base functionality from our main repo based on Hugo using Ananke Theme This post showcases the completed work as well as the upcoming features. These can be tracked in the following Coda boards:
+Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.</description>
     </item>
     
     <item>
@@ -131,7 +131,7 @@ Instructions:
       
       <guid>https://brewingcats.com/posts/site/credits/</guid>
       <description>This post was created to recognize the hard work of the many developers that made this site possible thus far. From hosting, to frameworks, they&amp;rsquo;re recognized here:
-Hosting, Libraries, Frameworks and other Technologies   BrewingCatsCore.Logger.traceInfo( `AirTable Component`, &#39;component.airtable&#39;, &#39;tagId_10&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;AirTable&#39;, &#39;tableId&#39;: &#39;shraGTO9M4qs0Th5v&#39; } );  Media   Unsplash: Beer Collection - Main Page image by @rawpixel    Image Credits: Unsplash: Mac Keyboard image by @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.split(&#39;;&#39;); for (let i = 0; i  BrewingCatsCore.Logger.traceInfo( `iframe Component`, &#39;component.iframe&#39;, &#39;tagId_15&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;iframe&#39;, &#39;src&#39;: &#39;https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqXw?viewMode=embedplay\u0026hideSections=true&#39; } );  Media   Unsplash: Beer Collection - Main Page image by @rawpixel    Image Credits: Unsplash: Mac Keyboard image by @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
     </item>
     
     <item>
@@ -140,10 +140,8 @@ Hosting, Libraries, Frameworks and other Technologies   BrewingCatsCore.Logger.t
       <pubDate>Sat, 25 Apr 2020 12:17:58 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/changelog/</guid>
-      <description>Changes made to the website are recorded in this post for tracking purposes
-Version: 3.28.28 Release: Han Solo  Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)
- Milestone Naming Conventions Milestone names are taken from:
-  List of Star Wars characters then:  Star Wars Legends characters then:  Star Wars Rebels characters then:  Star Wars: Knights of the Old Republic characters then:  Star Wars cast members then:  Star Wars: The Clone Wars cast members   Release milestone would look like:</description>
+      <description>This post contains a list of the changes made to the website, it is used for tracking purposes
+  Website Version Core Library Version Release Name     4.30.30          Ben Solo         (() = { document.querySelector(&#34;.a2a2fda9944481ba416bed2fc38402266&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)</description>
     </item>
     
     <item>

@@ -11,11 +11,9 @@ description: We document every change to our site here
 lang: en
 ---
 
-Changes made to the website are recorded in this post for tracking  purposes
+{{< big T  >}}his post contains a list of the changes made to the website, it is used for tracking purposes
 
-{{< highlight bash >}}
-{{< version >}}
-{{< /highlight >}}
+{{< libversion >}}
 
 {{< head 3 "Versioning Policies" >}}
 {{< highlight bash >}}
@@ -24,6 +22,7 @@ Major.Minor.Build
   |     |_____________ New features
   |___________________ Official new releases (Tied to a Release name)
 {{< /highlight >}}
+
 
 {{< head 3 "Milestone Naming Conventions" >}}
 Milestone names are taken from:
@@ -56,7 +55,13 @@ Release milestone would look like:
 
 {{< head 3 "Change Log" >}}
 
-{{< airtable shrWQhQXmYlzI3bdF purple 800 >}}
+{{< iframe src="https://coda.io/embed/fZg2bwTAZP/_supEU?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
+
+{{< iframe src="https://coda.io/embed/bNNCG5bcPs/_suyO9?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
+
+{{< head 4 "Naming Conventions" >}}
+
+{{< iframe src="https://coda.io/embed/bNNCG5bcPs/_suqp-?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
 
 {{< unsplash "mG28olYFgHI" "rossf" "Unsplash: Change" >}}
 {{< scrolltop >}}

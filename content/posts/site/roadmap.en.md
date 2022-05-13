@@ -15,9 +15,12 @@ This website is created over a common core which is used for other websites. It 
 {{< link "/" "Brewing Cats" >}} a better site. Brewing Cats Core augments the base functionality from our main repo based on 
 {{< link "https://gohugo.io/" "Hugo" >}} using {{< link "https://github.com/budparr/gohugo-theme-ananke" "Ananke Theme" >}}
 
-This post showcases the completed work as well as the upcoming features. These can be tracked in the following AirTable board:
+This post showcases the completed work as well as the upcoming features. These can be tracked in the following {{< link "https://coda.io/" "Coda" >}} boards:
 
-{{< trello "xcEx1Xjz" >}}
+{{< iframe src="https://coda.io/embed/fZg2bwTAZP/_sucpe?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
+
+{{< iframe src="https://coda.io/embed/bNNCG5bcPs/_suz9c?viewMode=embedplay&hideSections=true" width="1000" height="800" style="max-width:100%;" >}}
+
 {{< break >}}
 
 {{< unsplash "IUY_3DvM__w" "foxxmd" "Unsplash: Roadmap" >}}

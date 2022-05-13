@@ -7,10 +7,12 @@
     <title>Changelog | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="We document every change to our site here">
-    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Hugo 0.98.0" />
     
     
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+    
+      <meta name="robots" content="index, follow">
     
 
     
@@ -18,7 +20,8 @@
 
 
 
-
+    
+    
     
       
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -38,7 +41,7 @@
 <meta itemprop="name" content="Changelog">
 <meta itemprop="description" content="We document every change to our site here"><meta itemprop="datePublished" content="2020-04-25T12:17:58-07:00" />
 <meta itemprop="dateModified" content="2020-04-25T12:17:58-07:00" />
-<meta itemprop="wordCount" content="194">
+<meta itemprop="wordCount" content="293">
 <meta itemprop="keywords" content="site," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Changelog"/>
 <meta name="twitter:description" content="We document every change to our site here"/>
@@ -75,15 +78,10 @@ if (!doNotTrack) {
       gtag('config', 'UA-85767008-3');
     </script>
     
-    <script type='text/javascript' src="/javascript/autoinstagram.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/headparser.js#3.28.28" ></script>
+    <script type='text/javascript' src="/javascript/autoinstagram.js#4.30.30" ></script>
+    <script type='text/javascript' src="/javascript/headparser.js#4.30.30" ></script>
     
-    <script type='text/javascript' src="/javascript/config.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/interfaces.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/util.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/logger.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/gdpr.js#3.28.28" ></script>
-    <script type='text/javascript' src="/javascript/control.js#3.28.28" ></script> 
+    <script type='text/javascript' src="/javascript/bcats.js#4.30.30" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -95,10 +93,11 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '3.28.28';
+      BrewingCatsCore.Config.SiteVersion = '4.30.30';
+      BrewingCatsCore.Config.StatsMode = 'Stats2';
       
       BrewingCatsCore.Control.Init();
-      let version = '3.28.28';
+      let version = '4.30.30';
       let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
       let timeZoneMsg = `UTC+${timeZone}`;
       if (timeZone < 0) {
@@ -121,7 +120,7 @@ if (!doNotTrack) {
 
       BrewingCatsCore.Control.UpdateStats((stats) => {
         BrewingCatsCore.Logger.traceInfo(
-          `Loading: ${window.location.href}`,
+          `Stats for: ${window.location.href}`,
           'document.body',
           'tagId_12',
           'Bootstrap',
@@ -217,6 +216,7 @@ if (!doNotTrack) {
 </span></a>
   
 </div>
+
     </div>
   </div>
 </nav>
@@ -247,9 +247,68 @@ if (!doNotTrack) {
           Changelog
         </h1>
       </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>Changes made to the website are recorded in this post for tracking  purposes</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Version: 3.28.28 Release: Han Solo</span></span></code></pre></div>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <p><span style="
+color: rgb(255, 153, 0);
+float: left;
+font-size: 75px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;">T</span>his post contains a list of the changes made to the website, it is used for tracking purposes</p>
+
+
+
+
+
+
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">Website Version</th>
+      <th scope="col">Core Library Version</th>
+      <th scope="col">Release Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="table-dark">
+        <div class="highlight">
+          <code class="language-bash" data-lang="bash">
+            <span style="display:flex;">
+              4.30.30
+            </span>
+          </code>
+        </div>
+      </td>
+      <td class="table-dark">
+        <div class="highlight">
+          <code class="language-bash" data-lang="bash">
+            <span style="display:flex;">
+              <span class="a2a2fda9944481ba416bed2fc38402266"></span>
+            </span>
+          </code>
+        </div>
+      </td>
+      <td class="table-dark">
+        <div class="highlight">
+          <code class="language-bash" data-lang="bash">
+            <span style="display:flex;">
+              Ben Solo
+            </span>
+          </code>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<script>
+  (() => {
+    document.querySelector(".a2a2fda9944481ba416bed2fc38402266").innerHTML = `${BrewingCatsCore.Config.Version}`;
+  })();
+</script>
 <p>
 <h3 style="text-align: center; color:rgb(255, 153, 0);">Versioning Policies</h3>
 
@@ -360,27 +419,100 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Star Wars planets and mo
 
 
 
-<iframe class="airtable-embed"
-  src="https://airtable.com/embed/shrWQhQXmYlzI3bdF?backgroundColor=purple&viewControls=on"
-  frameborder="0"
-  onmousewheel=""
-  width="100%"
-  height="800"
-  style="background: transparent; border: 1px solid #ccc;">
-</iframe>
+
+
+
+
+<iframe id="a2a2fda9944481ba416bed2fc38402266" src="https://coda.io/embed/fZg2bwTAZP/_supEU?viewMode=embedplay&amp;hideSections=true" width="1000" height="800" style="ZgotmplZ" frameborder="0" marginheight="0" marginwidth="0" frameborder='0' allow="fullscreen">Loading…</iframe>
+<script>
+  (() => {
+    let paramStyle = 'max-width:100%;';
+    let styles = paramStyle.split(';');
+    for (let i = 0; i < styles.length; i++) {
+      let stylePair = styles[i].split(':');
+      document.querySelector('#a2a2fda9944481ba416bed2fc38402266').style[stylePair[0]] = stylePair[1];
+    }
+  })();
+</script>
 
 <script>
   BrewingCatsCore.Logger.traceInfo(
-    `AirTable Component`,
-    'component.airtable',
-    'tagId_10',
+    `iframe Component`,
+    'component.iframe',
+    'tagId_15',
     'ComponentSetup',
     {
-      'component': 'AirTable',
-      'tableId': 'shrWQhQXmYlzI3bdF'
+      'component': 'iframe',
+      'src': 'https:\/\/coda.io\/embed\/fZg2bwTAZP\/_supEU?viewMode=embedplay\u0026hideSections=true'
     }
   );
 </script>
+<br>
+
+
+
+
+
+
+<iframe id="a2a2fda9944481ba416bed2fc38402266" src="https://coda.io/embed/bNNCG5bcPs/_suyO9?viewMode=embedplay&amp;hideSections=true" width="1000" height="800" style="ZgotmplZ" frameborder="0" marginheight="0" marginwidth="0" frameborder='0' allow="fullscreen">Loading…</iframe>
+<script>
+  (() => {
+    let paramStyle = 'max-width:100%;';
+    let styles = paramStyle.split(';');
+    for (let i = 0; i < styles.length; i++) {
+      let stylePair = styles[i].split(':');
+      document.querySelector('#a2a2fda9944481ba416bed2fc38402266').style[stylePair[0]] = stylePair[1];
+    }
+  })();
+</script>
+
+<script>
+  BrewingCatsCore.Logger.traceInfo(
+    `iframe Component`,
+    'component.iframe',
+    'tagId_15',
+    'ComponentSetup',
+    {
+      'component': 'iframe',
+      'src': 'https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suyO9?viewMode=embedplay\u0026hideSections=true'
+    }
+  );
+</script>
+<br>
+
+<h4 style="text-align: center; color:rgb(255, 153, 0);">Naming Conventions</h4>
+
+
+
+
+
+
+
+<iframe id="a2a2fda9944481ba416bed2fc38402266" src="https://coda.io/embed/bNNCG5bcPs/_suqp-?viewMode=embedplay&amp;hideSections=true" width="1000" height="800" style="ZgotmplZ" frameborder="0" marginheight="0" marginwidth="0" frameborder='0' allow="fullscreen">Loading…</iframe>
+<script>
+  (() => {
+    let paramStyle = 'max-width:100%;';
+    let styles = paramStyle.split(';');
+    for (let i = 0; i < styles.length; i++) {
+      let stylePair = styles[i].split(':');
+      document.querySelector('#a2a2fda9944481ba416bed2fc38402266').style[stylePair[0]] = stylePair[1];
+    }
+  })();
+</script>
+
+<script>
+  BrewingCatsCore.Logger.traceInfo(
+    `iframe Component`,
+    'component.iframe',
+    'tagId_15',
+    'ComponentSetup',
+    {
+      'component': 'iframe',
+      'src': 'https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqp-?viewMode=embedplay\u0026hideSections=true'
+    }
+  );
+</script>
+<br>
 <p>
 
 
@@ -502,7 +634,7 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Star Wars planets and mo
             style="color: rgb(200, 200, 200); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
             onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
             onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">BCats</a>
-          Version: 3.28.28 Release: Han Solo Site Views: <span tag-id="site-page-views-footer">0</span>
+          Version: 4.30.30 Release: Ben Solo Site Views: <span tag-id="site-page-views-footer">0</span>
         </small>
         
       </code>
@@ -540,7 +672,8 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Star Wars planets and mo
 </svg>
 </span></a>
   
-</div></div>
+</div>
+</div>
   </div>
 </footer>
 

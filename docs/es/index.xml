@@ -109,7 +109,7 @@ Instrucciones:
       <pubDate>Tue, 05 May 2020 21:53:49 -0700</pubDate>
       
       <guid>https://brewingcats.com/es/posts/site/roadmap/</guid>
-      <description>Este sitio web está construido sobre una librería en común que hemos nombrado Brewing Cats Core la cual es utilizada en otros sitios web. Esta contiene características y funcionalidad específica que hacen de Brewing Cats un mejor sitio web. Brewing Cats Core expande la funcionalidad básica del repositorio principal basado en Hugo que usa Ananke Theme Este artículo muestra el trabajo completado asi como funcionalidad que vendrá próximamente. Puede ver el progreso en la tabla de AirTable de abajo:</description>
+      <description>Este sitio web está construido sobre una librería en común que hemos nombrado Brewing Cats Core la cual es utilizada en otros sitios web. Esta contiene características y funcionalidad específica que hacen de Brewing Cats un mejor sitio web. Brewing Cats Core expande la funcionalidad básica del repositorio principal basado en Hugo que usa Ananke Theme Este artículo muestra el trabajo completado asi como funcionalidad que vendrá próximamente. Puede ver el progreso en los siguentes tableros de Coda :</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@ Instrucciones:
       
       <guid>https://brewingcats.com/es/posts/site/credits/</guid>
       <description>Este artículo fué creado para reconocer el duro trabajo de los muchos desarrolladores que han hecho posible este sitio. Hosting, frameworks, todos reconocidos aqui:
-Hosting, Librerías, Frameworks y otras Technologías   BrewingCatsCore.Logger.traceInfo( `AirTable Component`, &#39;component.airtable&#39;, &#39;tagId_10&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;AirTable&#39;, &#39;tableId&#39;: &#39;shraGTO9M4qs0Th5v&#39; } );  Media   Unsplash: Beer Collection - Página Principal imagen de @rawpixel    Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Hosting, Librerías, Frameworks y otras Technologías Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.split(&#39;;&#39;); for (let i = 0; i  BrewingCatsCore.Logger.traceInfo( `iframe Component`, &#39;component.iframe&#39;, &#39;tagId_15&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;iframe&#39;, &#39;src&#39;: &#39;https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqXw?viewMode=embedplay\u0026hideSections=true&#39; } );  Media   Unsplash: Beer Collection - Página Principal imagen de @rawpixel    Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
     </item>
     
     <item>
@@ -140,9 +140,7 @@ Hosting, Librerías, Frameworks y otras Technologías   BrewingCatsCore.Logger.t
       
       <guid>https://brewingcats.com/es/posts/site/changelog/</guid>
       <description>Este artículo presenta una lista de cambios hechos al sitio web, tiene como objetivo llevar control del mismo
-Version: 3.28.28 Release: Han Solo  Políticas de Versión Mayor.Menor.Incremento  | | |_______ Versión de Brewing Cats Core  | |_____________ Nueva funcionalidad  |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
- Convención de Nombres de Proyecto Los nombres de proyecto se toman de:
-  Lista de personajes de Star Wars posteriormente:  Lista de personajes legendarios de Star Wars posteriormente:  Lista de personajes de la Rebelión de Star Wars posteriormente:  Personajes de Star Wars: Caballeros de la Vieja República posteriormente:  Miembros del elenco de Star Wars posteriormente:  Miembros del elenco de Star Wars: La Batalla de los Clones   El Código de Proyecto será presentado de la siguiente forma:</description>
+  Versión del Sitio Versión de Librería Nombre de la Versión     4.30.30          Ben Solo         (() = { document.querySelector(&#34;.ab1cf8370d196f0b5d48ef82118d305e6&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Políticas de Versión Mayor.Menor.Incremento  | | |_______ Versión de Brewing Cats Core  | |_____________ Nueva funcionalidad  |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)</description>
     </item>
     
     <item>
