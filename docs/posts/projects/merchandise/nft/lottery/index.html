@@ -7,7 +7,7 @@
     <title>Mexican Lottery on NFT First Edition | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Let&#39;s play Mexican Lottery board game, First NFT edition">
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     
     
     
@@ -41,7 +41,7 @@
 <meta itemprop="name" content="Mexican Lottery on NFT First Edition">
 <meta itemprop="description" content="Let&#39;s play Mexican Lottery board game, First NFT edition"><meta itemprop="datePublished" content="2021-09-23T15:43:48-07:00" />
 <meta itemprop="dateModified" content="2021-09-23T15:43:48-07:00" />
-<meta itemprop="wordCount" content="1933">
+<meta itemprop="wordCount" content="2703">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mexican Lottery on NFT First Edition"/>
 <meta name="twitter:description" content="Let&#39;s play Mexican Lottery board game, First NFT edition"/>
@@ -78,10 +78,7 @@ if (!doNotTrack) {
       gtag('config', 'UA-85767008-3');
     </script>
     
-    <script type='text/javascript' src="/javascript/autoinstagram.js#4.30.30" ></script>
-    <script type='text/javascript' src="/javascript/headparser.js#4.30.30" ></script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.30.30" ></script>
+    <script type='text/javascript' src="/javascript/bcats.js#4.31" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -93,11 +90,11 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.30.30';
+      BrewingCatsCore.Config.SiteVersion = '4.31';
       BrewingCatsCore.Config.StatsMode = 'Stats2';
       
       BrewingCatsCore.Control.Init();
-      let version = '4.30.30';
+      let version = BrewingCatsCore.Config.SiteVersion;
       let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
       let timeZoneMsg = `UTC+${timeZone}`;
       if (timeZone < 0) {
@@ -412,30 +409,61 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">OpenSea</a>
   (() => {
     let captionUrl = [];
     let captions = [];
+    let url = "";
     
     captions.push("First Board");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003798210364047361\/")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003798210364047361\/";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("Second Board");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003799309875675137\/")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003799309875675137\/";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("Third Board");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003800409387302913\/")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003800409387302913\/";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("Fourth Board");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003801508898930689\/")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003801508898930689\/";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
-    let captionHtml = `<a href="${captionUrl[0]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[0]}', '${captions[0]}')" 
+    url = captionUrl[0];
+    let captionHtml = `<a href="${url}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${url}', '${captions[0]}')" 
     style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
     onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
     onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">${captions[0]}</a>`;
+    if (url === "<none>") {
+      captionHtml = `<p style="text-align: center; font-style: italic;">${captions[0]}</p>`;
+    }
+    
     let carouselLabel = document.getElementById('carousel-label-loterianftboards');
     carouselLabel.innerHTML = captionHtml;
     document.getElementById('loterianftboards').addEventListener('slide.bs.carousel', (e) => {
-      carouselLabel.innerHTML = `<a href="${captionUrl[e.to]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[e.to]}', '${captions[e.to]}')" 
+      let innerHTML = `<a href="${captionUrl[e.to]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[e.to]}', '${captions[e.to]}')" 
       style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
       onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
       onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">${captions[e.to]}</a>`;
+      if (captionUrl[e.to] === "<none>") {
+        innerHTML = `<p style="text-align: center; font-style: italic;">${captions[e.to]}</p>`;
+      }
+
+      carouselLabel.innerHTML = innerHTML;
     });
   })();
 </script>
@@ -820,183 +848,469 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">OpenSea</a>
   (() => {
     let captionUrl = [];
     let captions = [];
+    let url = "";
     
     captions.push("Logo First Edition");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003802608410558465\/")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003802608410558465\/";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Gallo! (The Rooster)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003803707922186241")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003803707922186241";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Diablito! (The Devil)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003804807433814017")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003804807433814017";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Dama! (The Lady)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003805906945441793")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003805906945441793";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Catrin! (A Well Dressed Man)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003807006457069569")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003807006457069569";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Paraguas! (The Umbrella)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003808105968697345")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003808105968697345";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Sirena! (The Mermaid)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003809205480325121")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003809205480325121";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Escalera! (The Ladder)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003810304991952897")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003810304991952897";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Botella! (The Bottle)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003811404503580673")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003811404503580673";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Barril! (The Barrel)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003812504015208449")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003812504015208449";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Arbol! (The Tree)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003813603526836225")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003813603526836225";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Melon! (The Cantaloupe)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003814703038464001")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003814703038464001";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Valiente! (The Brave Man)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003815802550091777")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003815802550091777";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Gorrito! (The Hat)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003816902061719553")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003816902061719553";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Muerte! (The Grim Reaper)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003818001573347329")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003818001573347329";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Pera! (The Pear)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003819101084975105")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003819101084975105";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Bandera! (The Flag)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003820200596602881")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003820200596602881";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Bandolón! (Large Mandolin)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003821300108230657")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003821300108230657";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Violoncello! (The Cello)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003822399619858433")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003822399619858433";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Garza! (The Heron)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003823499131486209")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003823499131486209";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Pájaro! (The Bird)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003824598643113985")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003824598643113985";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Mano! (The Hand)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003825698154741761")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003825698154741761";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Bota! (The Boot)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003826797666369537")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003826797666369537";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Luna! (The Moon)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003827897177997313")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003827897177997313";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Cotorro! (The Parrot)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003828996689625089")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003828996689625089";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Borracho! (The Drunkard)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003830096201252865")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003830096201252865";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Elote! (Corn on the Cob)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003831195712880641")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003831195712880641";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Corazón! (The Heart)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003832295224508417")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003832295224508417";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Sandía! (The Watermelon)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003833394736136193")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003833394736136193";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Tambor! (The Drum)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003834494247763969")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003834494247763969";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Camarón! (The Shrimp)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003835593759391745")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003835593759391745";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("Las Jaras! (The Arrows)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003836693271019521")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003836693271019521";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Músico! (The Musician)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003837792782647297")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003837792782647297";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Araña! (The Spider)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003838892294275073")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003838892294275073";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Soldado! (The Soldier)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003839991805902849")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003839991805902849";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Estrella! (The Star)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003841091317530625")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003841091317530625";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Cazo! (The Saucepan)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003842190829158401")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003842190829158401";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Mundo! (The World)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003843290340786177")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003843290340786177";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Apache! (The Apache)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003844389852413953")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003844389852413953";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Nopal! (The Nopal)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003845489364041729")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003845489364041729";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Alacrán! (The Scorpion)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003846588875669505")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003846588875669505";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Rosa! (The Rose)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003847688387297281")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003847688387297281";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Calavera! (The Skull)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003848787898925057")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003848787898925057";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Campana! (The Bell)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003849887410552833")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003849887410552833";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Cantarito! (The Pitcher)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003850986922180609")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003850986922180609";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Venado! (The Deer)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003852086433808385")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003852086433808385";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Sol! (The Sun)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003853185945436161")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003853185945436161";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Corona! (The Crown)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003854285457063937")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003854285457063937";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Chalupa! (The Canoe)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003855384968691713")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003855384968691713";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Pino! (The Pine Tree)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003856484480319489")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003856484480319489";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Pescado! (The Fish)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003857583991947265")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003857583991947265";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Palmera! (The Palm Tree)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003858683503575041")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003858683503575041";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Maceta! (The Pot)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003859783015202817")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003859783015202817";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("El Arpa! (The Harp)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003860882526830593")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003860882526830593";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
     captions.push("La Rana! (The Frog)");
-    captionUrl.push("https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003861982038458369")
+    url = "https:\/\/opensea.io\/assets\/matic\/0x2953399124f0cbb46d2cbacd8a89cf0599974963\/103110853013507237000187125357550054863269627080108878194510003861982038458369";
+    if (url === "") {
+      url = "<none>";
+    }
+
+    captionUrl.push(url);
     
-    let captionHtml = `<a href="${captionUrl[0]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[0]}', '${captions[0]}')" 
+    url = captionUrl[0];
+    let captionHtml = `<a href="${url}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${url}', '${captions[0]}')" 
     style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
     onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
     onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">${captions[0]}</a>`;
+    if (url === "<none>") {
+      captionHtml = `<p style="text-align: center; font-style: italic;">${captions[0]}</p>`;
+    }
+    
     let carouselLabel = document.getElementById('carousel-label-loterianftcards');
     carouselLabel.innerHTML = captionHtml;
     document.getElementById('loterianftcards').addEventListener('slide.bs.carousel', (e) => {
-      carouselLabel.innerHTML = `<a href="${captionUrl[e.to]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[e.to]}', '${captions[e.to]}')" 
+      let innerHTML = `<a href="${captionUrl[e.to]}" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('${captionUrl[e.to]}', '${captions[e.to]}')" 
       style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
       onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
       onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">${captions[e.to]}</a>`;
+      if (captionUrl[e.to] === "<none>") {
+        innerHTML = `<p style="text-align: center; font-style: italic;">${captions[e.to]}</p>`;
+      }
+
+      carouselLabel.innerHTML = innerHTML;
     });
   })();
 </script>
@@ -1452,12 +1766,12 @@ community to let us know of this, based on the responses on this form we will mi
       </a>
       <code class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3">
         
-        <small>
+        <small class="BCCore-Update-SiteVersion">
           <a href="https://brewingcats.com" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/brewingcats.com', 'BCats')" 
             style="color: rgb(200, 200, 200); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
             onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
             onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">BCats</a>
-          Version: 4.30.30 Release: Ben Solo Site Views: <span tag-id="site-page-views-footer">0</span>
+          Version: ### Release: @@@ Site Views: <span tag-id="site-page-views-footer">0</span>
         </small>
         
       </code>

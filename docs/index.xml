@@ -141,7 +141,7 @@ Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let pa
       
       <guid>https://brewingcats.com/posts/site/changelog/</guid>
       <description>This post contains a list of the changes made to the website, it is used for tracking purposes
-  Website Version Core Library Version Release Name     4.30.30          Ben Solo         (() = { document.querySelector(&#34;.a2a2fda9944481ba416bed2fc38402266&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)</description>
+  Website Version Core Library Version Release Name     4.31          @@@         (() = { document.querySelector(&#34;.ac97b6110dc00dd5645a30b299910f47e&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)</description>
     </item>
     
     <item>

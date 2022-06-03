@@ -7,7 +7,7 @@
     <title>Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Creamos software exquisito">
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     
     
     
@@ -78,10 +78,7 @@ if (!doNotTrack) {
       gtag('config', 'UA-85767008-3');
     </script>
     
-    <script type='text/javascript' src="/javascript/autoinstagram.js#4.30.30" ></script>
-    <script type='text/javascript' src="/javascript/headparser.js#4.30.30" ></script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.30.30" ></script>
+    <script type='text/javascript' src="/javascript/bcats.js#4.31" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -93,11 +90,11 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.30.30';
+      BrewingCatsCore.Config.SiteVersion = '4.31';
       BrewingCatsCore.Config.StatsMode = 'Stats2';
       
       BrewingCatsCore.Control.Init();
-      let version = '4.30.30';
+      let version = BrewingCatsCore.Config.SiteVersion;
       let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
       let timeZoneMsg = `UTC+${timeZone}`;
       if (timeZone < 0) {
@@ -404,7 +401,7 @@ Hosting, Librerías, Frameworks y otras Technologías Loading…  (() = { let pa
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Este artículo presenta una lista de cambios hechos al sitio web, tiene como objetivo llevar control del mismo
-  Versión del Sitio Versión de Librería Nombre de la Versión     4.30.30          Ben Solo         (() = { document.querySelector(".ab1cf8370d196f0b5d48ef82118d305e6").innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Políticas de Versión Mayor.Menor.Incremento  | | |_______ Versión de Brewing Cats Core  | |_____________ Nueva funcionalidad  |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
+  Versión del Sitio Versión de Librería Nombre de la Versión     4.31          @@@         (() = { document.querySelector(".ac97b6110dc00dd5645a30b299910f47e").innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Políticas de Versión Mayor.Menor.Incremento  | | |_______ Versión de Brewing Cats Core  | |_____________ Nueva funcionalidad  |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
     </div>
   </div>
 </div>
@@ -499,12 +496,12 @@ Hosting, Librerías, Frameworks y otras Technologías Loading…  (() = { let pa
       </a>
       <code class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3">
         
-        <small>
+        <small class="BCCore-Update-SiteVersion">
           <a href="https://brewingcats.com" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/brewingcats.com', 'BCats')" 
             style="color: rgb(200, 200, 200); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
             onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
             onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">BCats</a>
-          Version: 4.30.30 Release: Ben Solo Site Views: <span tag-id="site-page-views-footer">0</span>
+          Version: ### Release: @@@ Site Views: <span tag-id="site-page-views-footer">0</span>
         </small>
         
       </code>
