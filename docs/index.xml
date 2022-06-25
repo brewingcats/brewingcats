@@ -13,7 +13,7 @@
       <pubDate>Wed, 20 Oct 2021 11:55:05 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/projects/uncategorized/latestnews/</guid>
-      <description> Tweets by brewingcats   Image Credits: Unsplash: Editorial image by @amadorloureiroblanco    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+      <description> Tweets by brewingcats Image Credits: Unsplash: Editorial image by @amadorloureiroblanco Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 05 Oct 2021 17:20:11 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/linktree/</guid>
-      <description>Promoted Content  OpenSea Profile   Brewing Cats on OpenSea  read more      NFT Projects   Learn about our NFT projects  read more      Mexican Lottery on NFT First Edition   Welcome to the First Edition of Mexican Lottery Board Game NFT!  read more      Ola Interpreting   Partner Site for Ola Interpreting LLC, certified interpreters  read more      HugoBelin.</description>
+      <description>Promoted Content OpenSea Profile Brewing Cats on OpenSea read more NFT Projects Learn about our NFT projects read more Mexican Lottery on NFT First Edition Welcome to the First Edition of Mexican Lottery Board Game NFT! read more Ola Interpreting Partner Site for Ola Interpreting LLC, certified interpreters read more HugoBelin.com Partner site for HugoBelin.com, personal site of the founder and CEO read more Brewing Cats Unsplash Profile Photos for everyone, our Unsplash Profile read more Instagram Our Instagram Account read more Twitter Our Twitter Account read more Tableau Tableau Public Profile read more Image Credits: Unsplash: Tree by the sea image by @shannonmclaughlin Image Credits: Unsplash: Denver image by @brende Image Credits: Unsplash image by @swimstaralex Image Credits: Unsplash: Instagram image by @alexbemore Image Credits: Unsplash: Twitter image by @alexbemore Scroll to Top Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -81,7 +81,7 @@ Adding the ShortCode to your Hugo Site To add support for embedding Tableau Publ
       <description>Note: This content is deprecated, we&amp;rsquo;re leaving this for the sake of history
 Very simple utility to parse Instagram post IDs. It allows to embed Instagram posts into our web page which can in turn be embedded in other places (like Tableau Vizzes 😉 )
 Instructions:
- Copy an Instagram post URL and paste it to the input field below You will get the fragment that can work with our special Instagram Post , you can add the following code to that URL ?</description>
+Copy an Instagram post URL and paste it to the input field below You will get the fragment that can work with our special Instagram Post , you can add the following code to that URL ?</description>
     </item>
     
     <item>
@@ -90,8 +90,9 @@ Instructions:
       <pubDate>Mon, 15 Jun 2020 16:30:05 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/about/</guid>
-      <description>Brewing Cats  Brewing Delightful Software
- Brewing Cats LLC is a small, independent company looking to enrich the web with quality content in several areas. Its owners do it in a fun and respectful way. Key focus areas are entertainment (movies, video games, and more) as well as software development. We have a special view of how the web should work and we try to lead by example</description>
+      <description>Brewing Cats Brewing Delightful Software
+Brewing Cats LLC is a small, independent company looking to enrich the web with quality content in several areas. Its owners do it in a fun and respectful way. Key focus areas are entertainment (movies, video games, and more) as well as software development. We have a special view of how the web should work and we try to lead by example
+Our View of the Web We believe the web should be fun, inclusive, respectful, welcoming of all beliefs and accessible to everyone.</description>
     </item>
     
     <item>
@@ -110,7 +111,7 @@ Instructions:
       
       <guid>https://brewingcats.com/posts/site/roadmap/</guid>
       <description>This website is created over a common core which is used for other websites. It packs specific features and functionality that make Brewing Cats a better site. Brewing Cats Core augments the base functionality from our main repo based on Hugo using Ananke Theme This post showcases the completed work as well as the upcoming features. These can be tracked in the following Coda boards:
-Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.</description>
+Loading… Loading… Image Credits: Unsplash: Roadmap image by @foxxmd Scroll to Top Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -120,8 +121,8 @@ Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = par
       
       <guid>https://brewingcats.com/posts/projects/consulting/</guid>
       <description> Consulting Services We offer consultation services for the following:
- Website building (management, coding, hosting, telemetry, https, etc.) PowerShell, C#, Java, TypeScript Basic Tableau   Contact us for more information
- Image Credits: Unsplash: Pen on a notebook image by @faceline    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Website building (management, coding, hosting, telemetry, https, etc.) PowerShell, C#, Java, TypeScript Basic Tableau Contact us for more information
+Image Credits: Unsplash: Pen on a notebook image by @faceline Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -131,7 +132,7 @@ Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = par
       
       <guid>https://brewingcats.com/posts/site/credits/</guid>
       <description>This post was created to recognize the hard work of the many developers that made this site possible thus far. From hosting, to frameworks, they&amp;rsquo;re recognized here:
-Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.split(&#39;;&#39;); for (let i = 0; i  BrewingCatsCore.Logger.traceInfo( `iframe Component`, &#39;component.iframe&#39;, &#39;tagId_15&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;iframe&#39;, &#39;src&#39;: &#39;https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqXw?viewMode=embedplay\u0026hideSections=true&#39; } );  Media   Unsplash: Beer Collection - Main Page image by @rawpixel    Image Credits: Unsplash: Mac Keyboard image by @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Hosting, Libraries, Frameworks and other Technologies Loading… Media Unsplash: Beer Collection - Main Page image by @rawpixel Image Credits: Unsplash: Mac Keyboard image by @fantasyflip Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -141,7 +142,9 @@ Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let pa
       
       <guid>https://brewingcats.com/posts/site/changelog/</guid>
       <description>This post contains a list of the changes made to the website, it is used for tracking purposes
-  Website Version Core Library Version Release Name     4.31          @@@         (() = { document.querySelector(&#34;.ac97b6110dc00dd5645a30b299910f47e&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)</description>
+Website Version Core Library Version Release Name 4.32 @@@ Versioning Policies Major.Minor.Build | | |_______ Brewing Cats Core Version | |_____________ New features |___________________ Official new releases (Tied to a Release name)
+Milestone Naming Conventions Milestone names are taken from:
+List of Star Wars characters then: Star Wars Legends characters then: Star Wars: Knights of the Old Republic characters Release milestone would look like:</description>
     </item>
     
     <item>
@@ -160,7 +163,7 @@ Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let pa
       
       <guid>https://brewingcats.com/posts/projects/uncategorized/my-first-post/</guid>
       <description>This first post is written in Markdown. 😄 List of features to evaluate here:
- ✅ Insertion of custom JavaScript this includes: ✅ Tableau embedded vizzes (use partials) ✅ Embedding Instagram ( built-in shortcode ) ✅ Embedding Airplay Boards (use partials) ✅ My own customized telemetry ( frontmatter library ) ✅ Google Ads (via partials ) ✅ Disqus commenting (via partials) ✅ Share This social buttons (use partials) ✅ Google Analytics (via partials) ✅ Embedding Giphy (via partials) ✅ Multi-language support  Contents:</description>
+✅ Insertion of custom JavaScript this includes: ✅ Tableau embedded vizzes (use partials) ✅ Embedding Instagram ( built-in shortcode ) ✅ Embedding Airplay Boards (use partials) ✅ My own customized telemetry ( frontmatter library ) ✅ Google Ads (via partials ) ✅ Disqus commenting (via partials) ✅ Share This social buttons (use partials) ✅ Google Analytics (via partials) ✅ Embedding Giphy (via partials) ✅ Multi-language support Contents:</description>
     </item>
     
     <item>
@@ -169,8 +172,7 @@ Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let pa
       <pubDate>Tue, 14 Jan 2020 12:08:35 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/instagram/</guid>
-      <description>Instagram-Auto-Embed
-window.AutoInstagram.Control.Initialize(&#34;701233337122574&#34;, &#34;cb323292940db3edd2ab47777543b4f7&#34;); if (window.AutoInstagram.Control.LoadFromParam() === &#39;&#39;) { window.AutoInstagram.Control.QueryAndAddInstagramPost( &#39;CDqPPKxp1cT&#39;, &#34;Instagram-Auto-Embed&#34; ); } else { window.AutoInstagram.Control.QueryAndAddInstagramPost( window.AutoInstagram.Control.LoadFromParam(), &#34;Instagram-Auto-Embed&#34; ); } BrewingCatsCore.Logger.traceInfo( `AutoInstagram Component`, &#39;component.autoinstagram&#39;, &#39;tagId_a&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;AutoInstagram&#39; } );  </description>
+      <description>Instagram-Auto-Embed</description>
     </item>
     
     <item>
@@ -188,7 +190,7 @@ window.AutoInstagram.Control.Initialize(&#34;701233337122574&#34;, &#34;cb323292
       <pubDate>Tue, 11 Jan 2000 19:30:11 -0800</pubDate>
       
       <guid>https://brewingcats.com/posts/projects/software/botwsign/</guid>
-      <description>$(document).ready(() = { let transArea = $(&#39;[tagId=&#34;transResult-botw-bare&#34;]&#39;); transArea.html(&#39;&#39;); let urlParams = new URLSearchParams(window.location.search); let text = &#39;&#39;; text = urlParams.get(&#39;text&#39;); if (text === &#39;&#39; || text === null || text === undefined) { return; } let styleNumber = 1; if (urlParams.has(&#39;style&#39;)) { let style2Param = urlParams.get(&#39;style&#39;); if (style2Param == &#39;2&#39;) { styleNumber = 2; } else { BrewingCatsCore.Logger.traceInfo( `BOTWBare Component`, &#39;component.botwbare&#39;, &#39;tagId_a&#39;, &#39;Invalid style from URL&#39;, { &#39;component&#39;: &#39;BOTWBare&#39;, &#39;style&#39;: style2Param } ); } } console.</description>
+      <description> </description>
     </item>
     
   </channel>

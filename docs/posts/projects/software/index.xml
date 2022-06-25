@@ -35,7 +35,7 @@ Adding the ShortCode to your Hugo Site To add support for embedding Tableau Publ
       <description>Note: This content is deprecated, we&amp;rsquo;re leaving this for the sake of history
 Very simple utility to parse Instagram post IDs. It allows to embed Instagram posts into our web page which can in turn be embedded in other places (like Tableau Vizzes 😉 )
 Instructions:
- Copy an Instagram post URL and paste it to the input field below You will get the fragment that can work with our special Instagram Post , you can add the following code to that URL ?</description>
+Copy an Instagram post URL and paste it to the input field below You will get the fragment that can work with our special Instagram Post , you can add the following code to that URL ?</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ Instructions:
       <pubDate>Tue, 11 Jan 2000 19:30:11 -0800</pubDate>
       
       <guid>https://brewingcats.com/posts/projects/software/botwsign/</guid>
-      <description>$(document).ready(() = { let transArea = $(&#39;[tagId=&#34;transResult-botw-bare&#34;]&#39;); transArea.html(&#39;&#39;); let urlParams = new URLSearchParams(window.location.search); let text = &#39;&#39;; text = urlParams.get(&#39;text&#39;); if (text === &#39;&#39; || text === null || text === undefined) { return; } let styleNumber = 1; if (urlParams.has(&#39;style&#39;)) { let style2Param = urlParams.get(&#39;style&#39;); if (style2Param == &#39;2&#39;) { styleNumber = 2; } else { BrewingCatsCore.Logger.traceInfo( `BOTWBare Component`, &#39;component.botwbare&#39;, &#39;tagId_a&#39;, &#39;Invalid style from URL&#39;, { &#39;component&#39;: &#39;BOTWBare&#39;, &#39;style&#39;: style2Param } ); } } console.</description>
+      <description> </description>
     </item>
     
   </channel>

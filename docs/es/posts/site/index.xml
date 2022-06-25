@@ -13,7 +13,7 @@
       <pubDate>Tue, 05 Oct 2021 17:20:17 -0700</pubDate>
       
       <guid>https://brewingcats.com/es/posts/site/linktree/</guid>
-      <description>Lista de Contenido Promovido  Perfil de OpenSea   Brewing Cats en OpenSea  Leer más      Proyectos NFT   Aprende acerca de nuestros proyectos usando NFT  Leer más      Lotería Mexicana en NFT Primera Edición   ¡Bienvenido al Juego de Lotería Mexicana en su version NFT!  Leer más      Ola Interpreting   Sitio socio de Ola Interpreting LLC, traductores certificados  Leer más      HugoBelin.</description>
+      <description>Lista de Contenido Promovido Perfil de OpenSea Brewing Cats en OpenSea Leer más Proyectos NFT Aprende acerca de nuestros proyectos usando NFT Leer más Lotería Mexicana en NFT Primera Edición ¡Bienvenido al Juego de Lotería Mexicana en su version NFT! Leer más Ola Interpreting Sitio socio de Ola Interpreting LLC, traductores certificados Leer más HugoBelin.com Sitio socio en HugoBelin.com, portal personal del fundador y CEO Leer más Perfil de Brewing Cats en Unsplash Fotos para todo el mundo, nuestro perfil de Unsplash Leer más Instagram Nuestra Cuenta de Instagram Leer más Twitter Nuestra Cuenta de Twitter Leer más Tableau Perfil de Tableau Public Leer más Créditos de la Imagen: Unsplash: Árbol con vista al oceano imagen de @shannonmclaughlin Créditos de la Imagen: Unsplash: Denver imagen de @brende Créditos de la Imagen: Unsplash imagen de @swimstaralex Créditos de la Imagen: Unsplash: Instagram imagen de @alexbemore Créditos de la Imagen: Unsplash: Twitter imagen de @alexbemore Volver al Comienzo Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -32,8 +32,8 @@ El uso de telemetría es una práctica común en la mayoría de sitios web, hoy 
       <pubDate>Mon, 15 Jun 2020 16:30:11 -0700</pubDate>
       
       <guid>https://brewingcats.com/es/posts/site/about/</guid>
-      <description>Brewing Cats  Elaboramos Software Exquisito
- Brewing Cats LLC es una compañía pequeña e independiente que busca enriquecer la web con contenido de calidad en distintas areas. Sus dueños lo hacen por diversión pero de forma respetuosa. Las areas principales son el entretenimiento (películas, video juegos y más) y el desarrollo de software. Tenemos una visión especial de como debe de funcionar la web de modo que tratamos de poner el ejemplo</description>
+      <description>Brewing Cats Elaboramos Software Exquisito
+Brewing Cats LLC es una compañía pequeña e independiente que busca enriquecer la web con contenido de calidad en distintas areas. Sus dueños lo hacen por diversión pero de forma respetuosa. Las areas principales son el entretenimiento (películas, video juegos y más) y el desarrollo de software. Tenemos una visión especial de como debe de funcionar la web de modo que tratamos de poner el ejemplo</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ El uso de telemetría es una práctica común en la mayoría de sitios web, hoy 
       
       <guid>https://brewingcats.com/es/posts/site/credits/</guid>
       <description>Este artículo fué creado para reconocer el duro trabajo de los muchos desarrolladores que han hecho posible este sitio. Hosting, frameworks, todos reconocidos aqui:
-Hosting, Librerías, Frameworks y otras Technologías Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.split(&#39;;&#39;); for (let i = 0; i  BrewingCatsCore.Logger.traceInfo( `iframe Component`, &#39;component.iframe&#39;, &#39;tagId_15&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;iframe&#39;, &#39;src&#39;: &#39;https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqXw?viewMode=embedplay\u0026hideSections=true&#39; } );  Media   Unsplash: Beer Collection - Página Principal imagen de @rawpixel    Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Hosting, Librerías, Frameworks y otras Technologías Loading… Media Unsplash: Beer Collection - Página Principal imagen de @rawpixel Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -71,7 +71,9 @@ Hosting, Librerías, Frameworks y otras Technologías Loading…  (() = { let pa
       
       <guid>https://brewingcats.com/es/posts/site/changelog/</guid>
       <description>Este artículo presenta una lista de cambios hechos al sitio web, tiene como objetivo llevar control del mismo
-  Versión del Sitio Versión de Librería Nombre de la Versión     4.31          @@@         (() = { document.querySelector(&#34;.ac97b6110dc00dd5645a30b299910f47e&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Políticas de Versión Mayor.Menor.Incremento  | | |_______ Versión de Brewing Cats Core  | |_____________ Nueva funcionalidad  |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)</description>
+Versión del Sitio Versión de Librería Nombre de la Versión 4.32 @@@ Políticas de Versión Mayor.Menor.Incremento | | |_______ Versión de Brewing Cats Core | |_____________ Nueva funcionalidad |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
+Convención de Nombres de Proyecto Los nombres de proyecto se toman de:
+Lista de personajes de Star Wars posteriormente: Lista de personajes legendarios de Star Wars posteriormente: Personajes de Star Wars: Caballeros de la Vieja República El Código de Proyecto será presentado de la siguiente forma:</description>
     </item>
     
   </channel>

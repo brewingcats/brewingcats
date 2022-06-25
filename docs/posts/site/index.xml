@@ -13,7 +13,7 @@
       <pubDate>Tue, 05 Oct 2021 17:20:11 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/linktree/</guid>
-      <description>Promoted Content  OpenSea Profile   Brewing Cats on OpenSea  read more      NFT Projects   Learn about our NFT projects  read more      Mexican Lottery on NFT First Edition   Welcome to the First Edition of Mexican Lottery Board Game NFT!  read more      Ola Interpreting   Partner Site for Ola Interpreting LLC, certified interpreters  read more      HugoBelin.</description>
+      <description>Promoted Content OpenSea Profile Brewing Cats on OpenSea read more NFT Projects Learn about our NFT projects read more Mexican Lottery on NFT First Edition Welcome to the First Edition of Mexican Lottery Board Game NFT! read more Ola Interpreting Partner Site for Ola Interpreting LLC, certified interpreters read more HugoBelin.com Partner site for HugoBelin.com, personal site of the founder and CEO read more Brewing Cats Unsplash Profile Photos for everyone, our Unsplash Profile read more Instagram Our Instagram Account read more Twitter Our Twitter Account read more Tableau Tableau Public Profile read more Image Credits: Unsplash: Tree by the sea image by @shannonmclaughlin Image Credits: Unsplash: Denver image by @brende Image Credits: Unsplash image by @swimstaralex Image Credits: Unsplash: Instagram image by @alexbemore Image Credits: Unsplash: Twitter image by @alexbemore Scroll to Top Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -32,8 +32,9 @@ The use of telemetry is a common and accepted practice for most websites, nowada
       <pubDate>Mon, 15 Jun 2020 16:30:05 -0700</pubDate>
       
       <guid>https://brewingcats.com/posts/site/about/</guid>
-      <description>Brewing Cats  Brewing Delightful Software
- Brewing Cats LLC is a small, independent company looking to enrich the web with quality content in several areas. Its owners do it in a fun and respectful way. Key focus areas are entertainment (movies, video games, and more) as well as software development. We have a special view of how the web should work and we try to lead by example</description>
+      <description>Brewing Cats Brewing Delightful Software
+Brewing Cats LLC is a small, independent company looking to enrich the web with quality content in several areas. Its owners do it in a fun and respectful way. Key focus areas are entertainment (movies, video games, and more) as well as software development. We have a special view of how the web should work and we try to lead by example
+Our View of the Web We believe the web should be fun, inclusive, respectful, welcoming of all beliefs and accessible to everyone.</description>
     </item>
     
     <item>
@@ -52,7 +53,7 @@ The use of telemetry is a common and accepted practice for most websites, nowada
       
       <guid>https://brewingcats.com/posts/site/roadmap/</guid>
       <description>This website is created over a common core which is used for other websites. It packs specific features and functionality that make Brewing Cats a better site. Brewing Cats Core augments the base functionality from our main repo based on Hugo using Ananke Theme This post showcases the completed work as well as the upcoming features. These can be tracked in the following Coda boards:
-Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.</description>
+Loading… Loading… Image Credits: Unsplash: Roadmap image by @foxxmd Scroll to Top Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -62,7 +63,7 @@ Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = par
       
       <guid>https://brewingcats.com/posts/site/credits/</guid>
       <description>This post was created to recognize the hard work of the many developers that made this site possible thus far. From hosting, to frameworks, they&amp;rsquo;re recognized here:
-Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let paramStyle = &#39;max-width:100%;&#39;; let styles = paramStyle.split(&#39;;&#39;); for (let i = 0; i  BrewingCatsCore.Logger.traceInfo( `iframe Component`, &#39;component.iframe&#39;, &#39;tagId_15&#39;, &#39;ComponentSetup&#39;, { &#39;component&#39;: &#39;iframe&#39;, &#39;src&#39;: &#39;https:\/\/coda.io\/embed\/bNNCG5bcPs\/_suqXw?viewMode=embedplay\u0026hideSections=true&#39; } );  Media   Unsplash: Beer Collection - Main Page image by @rawpixel    Image Credits: Unsplash: Mac Keyboard image by @fantasyflip    Site Views: 0  Page Views: 0  Your Site Views: 0  Your Page Views: 0   </description>
+Hosting, Libraries, Frameworks and other Technologies Loading… Media Unsplash: Beer Collection - Main Page image by @rawpixel Image Credits: Unsplash: Mac Keyboard image by @fantasyflip Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
     
     <item>
@@ -72,7 +73,9 @@ Hosting, Libraries, Frameworks and other Technologies Loading…  (() = { let pa
       
       <guid>https://brewingcats.com/posts/site/changelog/</guid>
       <description>This post contains a list of the changes made to the website, it is used for tracking purposes
-  Website Version Core Library Version Release Name     4.31          @@@         (() = { document.querySelector(&#34;.ac97b6110dc00dd5645a30b299910f47e&#34;).innerHTML = `${BrewingCatsCore.Config.Version}`; })();   Versioning Policies Major.Minor.Build  | | |_______ Brewing Cats Core Version  | |_____________ New features  |___________________ Official new releases (Tied to a Release name)</description>
+Website Version Core Library Version Release Name 4.32 @@@ Versioning Policies Major.Minor.Build | | |_______ Brewing Cats Core Version | |_____________ New features |___________________ Official new releases (Tied to a Release name)
+Milestone Naming Conventions Milestone names are taken from:
+List of Star Wars characters then: Star Wars Legends characters then: Star Wars: Knights of the Old Republic characters Release milestone would look like:</description>
     </item>
     
   </channel>

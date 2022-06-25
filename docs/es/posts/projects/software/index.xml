@@ -35,7 +35,7 @@ Añadiendo el ShortCode a tu Sitio Basado en Hugo Para agregar soporte para embe
       <description>Note: Este contenido es obsoleto y lo hemos dejado como nota de referencia
 Sencilla utilidad para obtener ids the fotos de Instagram. Permite embeber fotos de Instagram en nuestra página web la cuál puede ser a su vez embebida en otros lugares (como Vizzes de Tableau 😉 )
 Instrucciones:
- Copie el URL de una foto de Instagram e ingréselo en el campo de abajo Podrá ver el fragmento que identifica la foto que puede ser usado con nuestro sitio especial de Instagram , puede agregar el siguiente fragmento a la URL ?</description>
+Copie el URL de una foto de Instagram e ingréselo en el campo de abajo Podrá ver el fragmento que identifica la foto que puede ser usado con nuestro sitio especial de Instagram , puede agregar el siguiente fragmento a la URL ?</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ Instrucciones:
       <pubDate>Tue, 11 Jan 2000 19:30:13 -0800</pubDate>
       
       <guid>https://brewingcats.com/es/posts/projects/software/botwsign/</guid>
-      <description>$(document).ready(() = { let transArea = $(&#39;[tagId=&#34;transResult-botw-bare&#34;]&#39;); transArea.html(&#39;&#39;); let urlParams = new URLSearchParams(window.location.search); let text = &#39;&#39;; text = urlParams.get(&#39;text&#39;); if (text === &#39;&#39; || text === null || text === undefined) { return; } let styleNumber = 1; if (urlParams.has(&#39;style&#39;)) { let style2Param = urlParams.get(&#39;style&#39;); if (style2Param == &#39;2&#39;) { styleNumber = 2; } else { BrewingCatsCore.Logger.traceInfo( `BOTWBare Component`, &#39;component.botwbare&#39;, &#39;tagId_a&#39;, &#39;Invalid style from URL&#39;, { &#39;component&#39;: &#39;BOTWBare&#39;, &#39;style&#39;: style2Param } ); } } console.</description>
+      <description> </description>
     </item>
     
   </channel>
