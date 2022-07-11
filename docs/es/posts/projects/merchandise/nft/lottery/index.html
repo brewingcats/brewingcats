@@ -46,39 +46,15 @@
 <meta name="twitter:title" content="Lotería Mexicana en NFT Primera Edición"/>
 <meta name="twitter:description" content="Vamos a jugar el juego de Lotería Mexicana en su version NFT"/>
 
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-85767008-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85767008-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-85767008-3');
-    </script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.32" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -90,7 +66,7 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.32';
+      BrewingCatsCore.Config.SiteVersion = '4.33';
       BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
       BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
       BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
@@ -111,8 +87,8 @@ if (!doNotTrack) {
         {
           'url': window.location.href,
           'siteVersion': version,
-          'height': $(window).height(),
-          'width': $(window).width(),
+          'height': window.innerHeight,
+          'width': window.innerWidth,
           'timezone': timeZoneMsg
         }
       );
@@ -126,11 +102,11 @@ if (!doNotTrack) {
           stats
         );
 
-        $('span[tag-id="site-page-views-footer"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-site-views"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-page-views"]').html(stats.PageViews);
-        $('button[tag-id="stats-widget-user-site-views"]').html(stats.UserSiteViews);
-        $('button[tag-id="stats-widget-user-page-views"]').html(stats.UserPageViews);
+        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
       });
     </script>
     
@@ -309,10 +285,45 @@ tablas de 4x4, existen combinaciones de 54 eligiendo 16 : C(54,16) = 21 094923 6
 de 4x4 sin repetición de figuras con las 54 cartas estándar. 
 
 
-<a href="https://en.wikipedia.org/wiki/Loter%C3%ADa" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/en.wikipedia.org\/wiki\/Loter%C3%ADa', 'Léa la definición completa en Wikipedia.')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Léa la definición completa en Wikipedia.</a>
+
+
+<a href="https://en.wikipedia.org/wiki/Loter%C3%ADa" target="_blank" class="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURh"
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/en.wikipedia.org\/wiki\/Loter%C3%ADa', 'Léa la definición completa en Wikipedia.')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhHover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhBase')"
+>Léa la definición completa en Wikipedia.</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURh");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhBase"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhBase"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhHover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTG90ZXIlQzMlQURhHover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 </p>
 <p><span style="
 color: rgb(255, 153, 0);
@@ -337,10 +348,45 @@ La colección actual (Edición: Pixel) presenta los siguientes tableros de juego
 
 
 
-<a href="https://opensea.io/collection/mexican-lottery-game" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/opensea.io\/collection\/mexican-lottery-game', 'OpenSea')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">OpenSea</a>
+
+
+<a href="https://opensea.io/collection/mexican-lottery-game" target="_blank" class="aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/opensea.io\/collection\/mexican-lottery-game', 'OpenSea')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base')"
+>OpenSea</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  &ldquo;gas free&rdquo;</p>
 
 
@@ -471,10 +517,45 @@ La colección actual (Edición: Pixel) presenta las siguientes tarjetas NFT cole
 
 
 
-<a href="https://opensea.io/collection/mexican-lottery-game" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/opensea.io\/collection\/mexican-lottery-game', 'OpenSea')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">OpenSea</a>
+
+
+<a href="https://opensea.io/collection/mexican-lottery-game" target="_blank" class="aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/opensea.io\/collection\/mexican-lottery-game', 'OpenSea')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base')"
+>OpenSea</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9vcGVuc2VhLmlvL2NvbGxlY3Rpb24vbWV4aWNhbi1sb3R0ZXJ5LWdhbWU=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  y ¡gana el juego!</p>
 
 
@@ -1468,10 +1549,45 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">OpenSea</a>
 los coleccionables. Una vez conseguidos todos estos coleccionables 
 
 
-<a href="https://twitter.com/brewingcats" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/twitter.com\/brewingcats', 'déjanos saber')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">déjanos saber</a>
+
+
+<a href="https://twitter.com/brewingcats" target="_blank" class="aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw=="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/twitter.com\/brewingcats', 'déjanos saber')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base')"
+>déjanos saber</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  para acuñar una nueva tarjeta ganadora con la combinación
 que has adquirido. Las tarjetas ganadoras serán acuñadas en el orden pedido y van a tener un conteo del ganador</li>
 <li>Si esta edición tuvo exito ¡podrás esperar una segunda edición del juego con un diseño actualizado!</li>
@@ -1491,10 +1607,45 @@ detalles técnicos y quieres saber como se selecciona una tarjeta aleatoriamente
 
 
 
-<a href="https://github.com/brewingcats/loteria" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/github.com\/brewingcats\/loteria', 'Módulo de PowerShell: Lotería')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Módulo de PowerShell: Lotería</a>
+
+
+<a href="https://github.com/brewingcats/loteria" target="_blank" class="aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/github.com\/brewingcats\/loteria', 'Módulo de PowerShell: Lotería')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Base')"
+>Módulo de PowerShell: Lotería</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXRodWIuY29tL2JyZXdpbmdjYXRzL2xvdGVyaWE=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  hosteado en GitHub. Este repositorio contiene los cmdlets para cada operación así como una forma
 de simular un juego completo de principio a fin</p>
 
@@ -1564,10 +1715,45 @@ de tarjeta contiene la designación &ldquo;<code>Winner</code>&rdquo; además de
 este nuevo dueño puede 
 
 
-<a href="https://twitter.com/brewingcats" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/twitter.com\/brewingcats', 'solicitar')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">solicitar</a>
+
+
+<a href="https://twitter.com/brewingcats" target="_blank" class="aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw=="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/twitter.com\/brewingcats', 'solicitar')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base')"
+>solicitar</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly90d2l0dGVyLmNvbS9icmV3aW5nY2F0cw==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  que se acuñe una nueva tarjeta de trofeo, esta tarjeta de trofeo contendrá la designación <code>### Winner</code>
 además de sus atributos regulares. Todas las tarjetas de trofeo contendrán la edición a la que pertenece y la combinación de códigos ganadores. Tú puedes declararte el orgulloso ganador de
 <em>¡Lotería!</em> si posees las 16 tarjetas, el tablero que las contiene, y la tarjeta de trofeo que prueba que has ganado. El diseño de esta tarjeta es reservado hasta que se encuentre un ganador</p>

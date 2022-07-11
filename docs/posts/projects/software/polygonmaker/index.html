@@ -41,44 +41,20 @@
 <meta itemprop="name" content="Polygon Maker">
 <meta itemprop="description" content="Creates polygons on top of images"><meta itemprop="datePublished" content="2020-12-15T18:13:10-08:00" />
 <meta itemprop="dateModified" content="2020-12-15T18:13:10-08:00" />
-<meta itemprop="wordCount" content="343">
+<meta itemprop="wordCount" content="344">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Polygon Maker"/>
 <meta name="twitter:description" content="Creates polygons on top of images"/>
 
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-85767008-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85767008-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-85767008-3');
-    </script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.32" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -90,7 +66,7 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.32';
+      BrewingCatsCore.Config.SiteVersion = '4.33';
       BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
       BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
       BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
@@ -111,8 +87,8 @@ if (!doNotTrack) {
         {
           'url': window.location.href,
           'siteVersion': version,
-          'height': $(window).height(),
-          'width': $(window).width(),
+          'height': window.innerHeight,
+          'width': window.innerWidth,
           'timezone': timeZoneMsg
         }
       );
@@ -126,11 +102,11 @@ if (!doNotTrack) {
           stats
         );
 
-        $('span[tag-id="site-page-views-footer"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-site-views"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-page-views"]').html(stats.PageViews);
-        $('button[tag-id="stats-widget-user-site-views"]').html(stats.UserSiteViews);
-        $('button[tag-id="stats-widget-user-page-views"]').html(stats.UserPageViews);
+        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
       });
     </script>
     
@@ -303,10 +279,45 @@ Tableau visualizations. With the path coordinates we were able to draw the resul
 zones or areas that we wanted. To view the usage sample check out 
 
 
-<a href="/posts/projects/gaming/botw/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('\/posts\/projects\/gaming\/botw\/', 'this post.')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">this post.</a>
+
+
+<a href="/posts/projects/gaming/botw/" target="_blank" class="L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw=="
+onclick="BrewingCatsCore.LinkActions.openLink('\/posts\/projects\/gaming\/botw\/', 'this post.')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Base')"
+>this post.</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL3Byb2plY3RzL2dhbWluZy9ib3R3Lw==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 </p>
 <h3 id="usage">Usage</h3>
 <p>To make use of this utility follow these steps:</p>
@@ -314,10 +325,45 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">this post.</a>
 <li>Copy the path of the image on the web (we&rsquo;re using 
 
 
-<a href="https://source.unsplash.com/WLUHO9A_xik/800x600" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/source.unsplash.com\/WLUHO9A_xik\/800x600', 'this sample from Unsplash')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">this sample from Unsplash</a>
+
+
+<a href="https://source.unsplash.com/WLUHO9A_xik/800x600" target="_blank" class="aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/source.unsplash.com\/WLUHO9A_xik\/800x600', 'this sample from Unsplash')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Base')"
+>this sample from Unsplash</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1dMVUhPOUFfeGlrLzgwMHg2MDA=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 )</li>
 </ul>
 
@@ -375,15 +421,24 @@ to add tags to the points which can be used to denote regions</li>
 
 
 
-
 <form>
   <br>
+  
   <div id="img-loader" class="input-group mb-3" style="display: none;">
     <span class="input-group-text">Image:</span>
     <input type="text" id="img-path" class="form-control" 
-        placeholder="https://source.unsplash.com/WLUHO9A_xik/800x600" 
-        aria-label="https://source.unsplash.com/WLUHO9A_xik/800x600" aria-describedby="image-text-message">
+    placeholder="https://source.unsplash.com/WLUHO9A_xik" 
+    aria-label="https://source.unsplash.com/WLUHO9A_xik"
+    aria-describedby="image-text-message">
     <button id="load-photo" type="button" class="btn btn-primary">Load</button>
+  </div>
+  
+  <div id="local-loader" class="input-group mb-3" style="display: none;">
+    <input type="file" id="local-img-path" class="form-control" 
+      name="image"
+      accept="image/*"
+      aria-describedby="image-text-message">
+    <button id="load-local-photo" type="button" class="btn btn-primary">Load</button>
   </div>
   <br>
   <div class="input-group mb-3">
@@ -416,7 +471,7 @@ to add tags to the points which can be used to denote regions</li>
 <div id="resulting-points"></div>
 
 <div id="contextMenu" class="dropdown clearfix">
-  <ul class="dropdown-menu" id="menu-tags" role="menu" aria-labelledby="dropdownMenu" style="display:block; position:static;margin-bottom:5px;">
+  <ul class="dropdown-menu" id="menu-tags" role="menu" aria-labelledby="dropdownMenu" style="display:block; position:fixed; margin-bottom:5px;">
     <li><a class="dropdown-item" id="add-new-tag-option" tabindex="-1" href="#" data-bs-toggle="modal" data-bs-target="#add-new-tag">Add a new tag</a></li>
     <li class="dropdown-divider"></li>
   </ul>
@@ -430,8 +485,8 @@ to add tags to the points which can be used to denote regions</li>
           <div class="input-group-prepend">
             <span class="input-group-text" id="new-tag-description">Enter new tag:</span>
           </div>
-          <input type="text" class="form-control" id="new-tag-input-field" placeholder="Empty" aria-label="Empty" aria-describedby="new-tag-description">
-          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="applyNewTag()">Apply</button>
+          <input type="text" class="form-control" id="new-tag-input-field" placeholder="Empty" aria-label="Empty" aria-describedby="new-tag-description" autofocus>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="applyNewTag()">Apply</button>
         </div>
       </div>
     </div>
@@ -439,8 +494,10 @@ to add tags to the points which can be used to denote regions</li>
 </div>
 <style>
   #contextMenu {
-    position: absolute;
-    display:none;
+    position: fixed;
+    display: none;
+    width: fit-content;
+    height: fit-content;
   }
 </style>
 <script>
@@ -461,12 +518,12 @@ to add tags to the points which can be used to denote regions</li>
 
   var recordingEnabled = false;
   var source = 'prompt';
-  var btn = $('#record-poly');
-  var clearBtn = $('#clear-poly');
-  var results = $('#resulting-points');
-  var lbl = $('#progress-label')[0];
-  var exportData = $('#export-data');
-  $('#export-link').on('click', (e) => {
+  var btn = window.document.getElementById('record-poly');
+  var clearBtn = window.document.getElementById('clear-poly');
+  var results = window.document.getElementById('resulting-points');
+  var lbl = window.document.getElementById('progress-label');
+  var exportData = window.document.getElementById('export-data');
+  window.document.getElementById('export-link').addEventListener('click', (e) => {
     BrewingCatsCore.Logger.traceInfo(
       `Downloading Interactions`,
       'component.polygonmaker',
@@ -474,7 +531,7 @@ to add tags to the points which can be used to denote regions</li>
       'ComponentInteraction',
       {
         'component': 'Polygonmaker',
-        'size': `${exportData.attr('href').length}`
+        'size': `${exportData.getAttribute('href').length}`
       }
     );
   });
@@ -491,10 +548,10 @@ to add tags to the points which can be used to denote regions</li>
     source = url.searchParams.get('url');
     loadImg(source);
   } else if (source === 'prompt') {
-    $('#img-loader').css('display', 'flex');
-    $('#load-photo')[0].addEventListener('click', (e) => {
-      let el = $('#img-path');
-      let val = el.val();
+    window.document.getElementById('img-loader').style.display = 'flex';
+    window.document.getElementById('load-photo').addEventListener('click', (e) => {
+      let el = window.document.getElementById('img-path');
+      let val = el.value === '' ? el.getAttribute('placeholder'): el.value;
       if (val == "") {
         val = el.attr('aria-label');
       }
@@ -502,47 +559,66 @@ to add tags to the points which can be used to denote regions</li>
       loadImg(val);
       source = val;
     });
+
+    window.document.getElementById('local-loader').style.display = 'flex';
+    window.document.getElementById('load-local-photo').addEventListener('click', (e) => {
+      let input = window.document.getElementById('local-img-path');
+      if (input.files && input.files[0]) {
+        let reader = new FileReader();
+        reader.onload = (e) => {
+          loadImg(e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    });
   } else {
     loadImg(source);
   }
   
-  btn[0].addEventListener('click', (event) => {
+  btn.addEventListener('click', (event) => {
     recordingEnabled = true;
-    $("#export-link").css('display', 'block');
-    exportData.attr('href', 'data:application/octet-stream, x%2Cy%2Ctag%0A');
-    btn[0].innerText = 'Recording';
+    window.document.getElementById("export-link").style.display = 'block';
+    exportData.setAttribute('href', 'data:application/octet-stream, x%2Cy%2Ctag%0A');
+    btn.innerText = 'Recording';
   });
 
-  var useLastTagSel = $('#repeat-used-tag')[0];
-  var $contextMenu = $("#contextMenu");
+  var useLastTagSel = window.document.getElementById('repeat-used-tag');
+  var contextMenu = window.document.getElementById("contextMenu");
   
-  $contextMenu.on("click", "a", (e) => {
-    let iTag = e.currentTarget.innerText;
-    if (iTag === 'Add a new tag') {
-      $contextMenu.hide();
+  contextMenu.addEventListener('click', (e) => {
+    let iTag = e.target.innerText;
+    if (e.target === window.document.getElementById('add-new-tag-option')) {
+      contextMenu.style.display = 'none';
+      return;
+    }
+
+    if (e.target === window.document.querySelector('li.dropdown-divider') ||
+      e.target === window.document.querySelector('ul#menu-tags.dropdown-menu')
+    ) {
+      finalizeTag(lastLabelUsed);
       return;
     }
 
     lastLabelUsed = iTag;
-    finalizeTag(iTag);
-    $contextMenu.hide();
+    finalizeTag(lastLabelUsed);
+    contextMenu.style.display = 'none';
   });
 
   
-  $(document).mouseup((e) => {
+  window.document.addEventListener('click', (e) => {
     
-    if (!$contextMenu.is(e.target) && $contextMenu.has(e.target).length === 0) 
-    {
-      $contextMenu.hide();
+    if (contextMenu !== e.target && contextMenu.style.display !== 'none') {
+      contextMenu.style.display = 'none';
     }
 
   });
   
   
-  $(document).keyup((e) => {
+  window.document.addEventListener('keyup', (e) => {
     e = e || window.event
     if (e.key === 'Escape') {
-      $contextMenu.hide();
+      contextMenu.style.display = 'none';
     }
   });
 
@@ -564,7 +640,7 @@ to add tags to the points which can be used to denote regions</li>
         }
       );
 
-      let canvasContainer = $('#canvas-container');
+      let canvasContainer = window.document.getElementById('canvas-container');
       let maxWidth = 990;
       let width = img.width;
       if (img.width > maxWidth) {
@@ -577,20 +653,19 @@ to add tags to the points which can be used to denote regions</li>
       }
 
       img.lockUniScaling = true;
-      let div = $(`<canvas id="img-canvas" style="display: block; margin-left: auto; margin-right:auto; max-width: min-content;" width="${width}" height="${canvasHeight}" ></canvas>`);
-      canvasContainer.append(div);
-      canvas = $('#img-canvas')[0];
+      let div = `<canvas id="img-canvas" style="display: block; margin-left: auto; margin-right:auto; max-width: min-content;" width="${width}" height="${canvasHeight}" ></canvas>`;
+      canvasContainer.innerHTML = div;
+      canvas = window.document.getElementById('img-canvas');
       ctx = canvas.getContext('2d');
 
-      let hRatio = canvas.width / img.width;
-      let vRatio = canvas.height / img.height;
-      let ratio  = Math.min ( hRatio, vRatio );
-      ctx.drawImage(img, 0,0, img.width, img.height, 0,0,img.width*ratio, img.height*ratio);
-      img.style.display = 'none';
+      let scale = Math.min(canvas.width / img.width, canvas.height / img.height);
+      let x = (canvas.width / 2) - (img.width / 2) * scale;
+      let y = (canvas.height / 2) - (img.height / 2) * scale;
+      ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
   
-      btn.attr('disabled', false);
-      btn[0].innerText = 'Start';
-      clearBtn.attr('disabled', false);
+      btn.removeAttribute('disabled');
+      btn.innerText = 'Start';
+      clearBtn.removeAttribute('disabled');
       
       canvas.addEventListener('click', (event) => {
         if (!recordingEnabled) {
@@ -598,35 +673,42 @@ to add tags to the points which can be used to denote regions</li>
         }
 
         if (startPoint.x == -1 && startPoint.y == -1) {
-          startPoint.x = event.layerX;
-          startPoint.y = event.layerY;
+          startPoint.x = event.offsetX;
+          startPoint.y = event.offsetY;
           ctx.beginPath();
-          ctx.moveTo(event.layerX, event.layerY);
+          ctx.moveTo(event.offsetX, event.offsetY);
         } else {
-          ctx.lineTo(event.layerX, event.layerY);
+          ctx.lineTo(event.offsetX, event.offsetY);
           ctx.stroke();
         }
         
-        let pixel = ctx.getImageData(event.layerX, event.layerY, 1, 1).data;
-        let offsetX = isNaN(parseInt($('#offsetX').val()))? 0 : parseInt($('#offsetX').val());
-        let offsetY = isNaN(parseInt($('#offsetY').val()))? 0 : parseInt($('#offsetY').val());
-        let msg = `(${event.layerX + offsetX}, ${offsetY - event.layerY}) rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3] / 255})`;
+        let pixel = ctx.getImageData(event.offsetX, event.offsetY, 1, 1).data;
+        let elOffX = window.document.getElementById('offsetX');
+        let offsetX = elOffX.value === '' ? 0 : parseInt(elOffX.value);
+        let elOffY = window.document.getElementById('offsetY');
+        let offsetY = elOffY.value === '' ? 0 : parseInt(elOffY.value);
+        let msg = `(${event.offsetX + offsetX}, ${offsetY - event.offsetY}) rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3] / 255})`;
         console.log(msg);
         lbl.innerText = 'Point' + `: ${msg}`;
-        let deltaItem = parseInt($('#node-size').val());
-        if (isNaN(deltaItem) || deltaItem < 2) {
+        let deltaEl = window.document.getElementById('node-size');
+        let deltaItem = deltaEl.value === ''? 10 : parseInt(deltaEl.value);
+        if (deltaItem < 2) {
           deltaItem = 10;
         }
 
-        ctx.rect(event.layerX - parseInt(deltaItem / 2), event.layerY - parseInt(deltaItem / 2), deltaItem, deltaItem);
-        ctx.stroke();
-        ctx.moveTo(event.layerX, event.layerY);
+        ctx.strokeRect(
+          event.offsetX - parseInt(deltaItem / 2),
+          event.offsetY - parseInt(deltaItem / 2),
+          deltaItem,
+          deltaItem);
+        
+        ctx.moveTo(event.offsetX, event.offsetY);
         let tag = 'Empty';
         if (useLastTagSel.checked) {
           tag = lastLabelUsed;
         }
 
-        logPoint(event.layerX + offsetX, offsetY - event.layerY, tag);
+        logPoint(event.offsetX + offsetX, offsetY - event.offsetY, tag);
       });
 
       
@@ -636,38 +718,38 @@ to add tags to the points which can be used to denote regions</li>
         }
 
         if (startPoint.x == -1 && startPoint.y == -1) {
-          startPoint.x = event.layerX;
-          startPoint.y = event.layerY;
+          startPoint.x = event.offsetX;
+          startPoint.y = event.offsetY;
           ctx.beginPath();
-          ctx.moveTo(event.layerX, event.layerY);
+          ctx.moveTo(event.offsetX, event.offsetY);
         } else {
-          ctx.lineTo(event.layerX, event.layerY);
+          ctx.lineTo(event.offsetX, event.offsetY);
           ctx.stroke();
         }
         
-        let pixel = ctx.getImageData(event.layerX, event.layerY, 1, 1).data;
-        let offsetX = isNaN(parseInt($('#offsetX').val()))? 0 : parseInt($('#offsetX').val());
-        let offsetY = isNaN(parseInt($('#offsetY').val()))? 0 : parseInt($('#offsetY').val());
-        let msg = `(${event.layerX + offsetX}, ${offsetY - event.layerY}) rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3] / 255})`;
+        let pixel = ctx.getImageData(event.offsetX, event.offsetY, 1, 1).data;
+        let elOffX = window.document.getElementById('offsetX');
+        let elOffY = window.document.getElementById('offsetY');
+        let offsetX = elOffX.value === '' ? 0 : parseInt(elOffX.value);
+        let offsetY = elOffY.value === '' ? 0 : parseInt(elOffY.value);
+        let msg = `(${event.offsetX + offsetX}, ${offsetY - event.offsetY}) rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3] / 255})`;
         console.log(msg);
         lbl.innerText = `"Point": ${msg}`;
-        let deltaItem = parseInt($('#node-size').val());
+        let deltaItem = parseInt(window.document.getElementById('node-size').value);
         if (isNaN(deltaItem) || deltaItem < 2) {
           deltaItem = 10;
         }
 
-        ctx.rect(event.layerX - parseInt(deltaItem / 2), event.layerY - parseInt(deltaItem / 2), deltaItem, deltaItem);
+        ctx.rect(event.offsetX - parseInt(deltaItem / 2), event.offsetY - parseInt(deltaItem / 2), deltaItem, deltaItem);
         ctx.stroke();
-        ctx.moveTo(event.layerX, event.layerY);
-        $contextMenu.css({
-          display: "block",
-          left: event.pageX,
-          top: event.pageY
-        });
+        ctx.moveTo(event.offsetX, event.offsetY);
+        contextMenu.style.left = `${event.clientX}px`;
+        contextMenu.style.top = `${event.clientY}px`;
+        contextMenu.style.display = 'block';
 
         currentCoords = {
-          x: event.layerX + offsetX,
-          y: offsetY - event.layerY
+          x: event.offsetX + offsetX,
+          y: offsetY - event.offsetY
         };
 
         event.preventDefault();
@@ -676,27 +758,30 @@ to add tags to the points which can be used to denote regions</li>
   }
 
   function logPoint(x, y, tag) {
-    let dataPoint = $(`<span>${x}, ${y}, ${tag}</span><br>`);
-    results.append(dataPoint);
-    exportData.attr('href', `${exportData.attr('href')}${x}%2C${y}%2C${encodeURI(tag)}%0A`);
+    let clickPoint = window.document.createElement('span');
+    clickPoint.innerHTML = `${x}, ${y}, ${tag}`;
+    let breakEl = window.document.createElement('br');
+    results.appendChild(clickPoint);
+    results.appendChild(breakEl);
+    exportData.setAttribute('href', `${exportData.getAttribute('href')}${x}%2C${y}%2C${encodeURI(tag)}%0A`);
   }
 
   function validateKey(e, src) {
-    let val = $(`#offset${src}`).val();
+    let val = window.document.getElementById(`offset${src}`).value;
     if (val == "") {
-      btn.attr('disabled', false);
+      btn.disabled = false;
       return;
     }
 
     if (isNaN(parseInt(val))) {
-      btn.attr('disabled', true);
+      btn.disabled = true;
     } else {
-      btn.attr('disabled', false);
+      btn.disabled = false;
     }
   }
 
   function clearResults() {
-    results[0].innerHTML = "";
+    results.innerHTML = "";
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     let hRatio = canvas.width / img.width;
     let vRatio = canvas.height / img.height;
@@ -704,21 +789,21 @@ to add tags to the points which can be used to denote regions</li>
     ctx.drawImage(img, 0,0, img.width, img.height, 0,0,img.width*ratio, img.height*ratio);
     startPoint.x = -1;
     startPoint.y = -1;
-    btn[0].innerText = 'Start';
+    btn.innerText = 'Start';
     recordingEnabled = false;
   }
 
   function applyNewTag() {
-    let nTag = $('#new-tag-input-field').val();
+    let nTag = window.document.getElementById('new-tag-input-field').value;
     if (customLabels.indexOf(nTag) === -1) {
       customLabels.push(nTag);
-      $('#menu-tags').append(`<li><a class="dropdown-item" tabindex="-1">${nTag}</a></li>`);
+      let el = window.document.getElementById('menu-tags');
+      el.innerHTML = `${el.innerHTML}<li><a class="dropdown-item" tabindex="-1">${nTag}</a></li>`;
     }
     
     
     lastLabelUsed = nTag;
-    $('#add-new-tag').modal('hide');
-    $('#new-tag-input-field').val('');
+    window.document.getElementById('new-tag-input-field').value = '';
     finalizeTag(nTag);
   }
 

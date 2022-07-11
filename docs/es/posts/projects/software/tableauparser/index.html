@@ -46,39 +46,15 @@
 <meta name="twitter:title" content="Extractor de Código de Tableau Share"/>
 <meta name="twitter:description" content="Utilidad básica para extraer los campos necesarios del código para compartir de Tableau con el objetivo de usarlos con nuestro shortcode para embeber Tableau"/>
 
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-85767008-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85767008-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-85767008-3');
-    </script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.32" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -90,7 +66,7 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.32';
+      BrewingCatsCore.Config.SiteVersion = '4.33';
       BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
       BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
       BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
@@ -111,8 +87,8 @@ if (!doNotTrack) {
         {
           'url': window.location.href,
           'siteVersion': version,
-          'height': $(window).height(),
-          'width': $(window).width(),
+          'height': window.innerHeight,
+          'width': window.innerWidth,
           'timezone': timeZoneMsg
         }
       );
@@ -126,11 +102,11 @@ if (!doNotTrack) {
           stats
         );
 
-        $('span[tag-id="site-page-views-footer"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-site-views"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-page-views"]').html(stats.PageViews);
-        $('button[tag-id="stats-widget-user-site-views"]').html(stats.UserSiteViews);
-        $('button[tag-id="stats-widget-user-page-views"]').html(stats.UserPageViews);
+        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
       });
     </script>
     
@@ -308,10 +284,45 @@ padding-right: 8px;
 padding-left: 3px;">A</span>nteriormente creamos un 
 
 
-<a href="https://gist.github.com/hobelinm/de089f99c3543e2a16f8f24fee4d958e" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/gist.github.com\/hobelinm\/de089f99c3543e2a16f8f24fee4d958e', 'shortcode para embeber Vizzes de Tableau')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">shortcode para embeber Vizzes de Tableau</a>
+
+
+<a href="https://gist.github.com/hobelinm/de089f99c3543e2a16f8f24fee4d958e" target="_blank" class="aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/gist.github.com\/hobelinm\/de089f99c3543e2a16f8f24fee4d958e', 'shortcode para embeber Vizzes de Tableau')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base')"
+>shortcode para embeber Vizzes de Tableau</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  en sitios web basados en el
 Framework de Hugo, el uso de este es bastante simple y conveniente, sin embargo para poder hacer uso de el necesitamos saber de antemano ciertos campos que extraemos manualmente del
 código para compartir que nos da Tableau. Abajo los pasos para obtener este código</p>
@@ -328,10 +339,45 @@ padding-right: 8px;
 padding-left: 3px;">P</span>ara agregar soporte para embeber vizzes de Tableau sencillamente copia 
 
 
-<a href="https://gist.github.com/hobelinm/de089f99c3543e2a16f8f24fee4d958e" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/gist.github.com\/hobelinm\/de089f99c3543e2a16f8f24fee4d958e', 'nuestro shortcode')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">nuestro shortcode</a>
+
+
+<a href="https://gist.github.com/hobelinm/de089f99c3543e2a16f8f24fee4d958e" target="_blank" class="aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/gist.github.com\/hobelinm\/de089f99c3543e2a16f8f24fee4d958e', 'nuestro shortcode')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base')"
+>nuestro shortcode</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vaG9iZWxpbm0vZGUwODlmOTljMzU0M2UyYTE2ZjhmMjRmZWU0ZDk1OGU=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  en el
 siguiente directorio dentro de tu sitio <code>/layouts/shortcodes/tableau.html</code>. Para embeber un viz en tu sitio web en tu código de markdown agregue el siguiente código donde quieras embeber tu viz.
 La siguiente sección mostrará como obtener el código para compartir desde Tableau Public y a partir de ahi podremos usarlo para obtener los parámetros que necesitamos</p>
@@ -465,7 +511,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
 
 <script type="text/javascript">
   function ParseShareCode() {
-    let inputVal = $('#embed-code-input').val();
+    let inputVal = window.document.getElementById('embed-code-input').value;
 
     
     if (inputVal === undefined || inputVal === null || inputVal === "") {
@@ -521,12 +567,17 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
     let workbookName = pathSections[pathSections.length - 3];
     let prefixId = pathSections[pathSections.length - 4];
 
-    $("#prefixIdArea").text(prefixId);
-    $("#workbookNameArea").text(workbookName);
-    $("#worksheetNameArea").text(worksheetName);
+    window.document.getElementById("prefixIdArea").innerText = prefixId;
+    window.document.getElementById("workbookNameArea").innerText = workbookName;
+    window.document.getElementById("worksheetNameArea").innerText = worksheetName;
 
-    $('#vizArea').html(inputVal);
-    let vizId = $('#vizArea').find('.tableauPlaceholder').attr('id');
+    let htmlPart = inputVal.split('<script ')[0];
+    window.document.getElementById('vizArea').innerHTML = htmlPart;
+    let scriptPart = inputVal.split(`type='text/javascript'>`)[1].replace('/script>', '').replace(`<`, '');
+    let scriptEl = window.document.createElement('script');
+    scriptEl.innerHTML = scriptPart;
+    window.document.getElementById('vizArea').append(scriptEl);
+    let vizId = window.document.querySelector('#vizArea .tableauPlaceholder').id;
     if (vizId === undefined || vizId === null || vizId === "") {
       console.warn('[0]:Invalid input entered');
       ResetValues();
@@ -543,13 +594,12 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
       return;
     }
 
-    $("#vizIdArea").text(vizId);
+    window.document.getElementById("vizIdArea").innerText = vizId;
     let shortCode = '{';
     shortCode += '{';
     shortCode += '< tableau "' + vizId + '" "' + prefixId + '" "' + workbookName + '" "' + worksheetName + '" >'
     shortCode += '}}';
-    $('#shortcodeArea').text(shortCode);
-    ShowBtnTooltip(true);
+    window.document.getElementById('shortcodeArea').innerText = shortCode;
     BrewingCatsCore.Logger.traceInfo(
       `Parsing Tableau Share Code`,
       'component.tableauparser',
@@ -563,46 +613,41 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   }
 
   function ResetValues() {
-    ShowBtnTooltip(false);
-    $('#vizIdArea').text("vacío");
-    $('#prefixIdArea').text("vacío");
-    $('#workbookNameArea').text("vacío");
-    $('#worksheetNameArea').text("vacío");
-    $('#shortcodeArea').text("vacío");
-    if ($('#defaultVizLoaded').length === 0) {
-      $('#vizArea').html("\u003cdiv id=\u0027defaultVizLoaded\u0027\u003e\u003c\/div\u003e\u003cdiv class=\u0027tableauPlaceholder\u0027 id=\u0027viz1599000528258\u0027 style=\u0027position: relative\u0027\u003e\u003cnoscript\u003e\u003ca href=\u0027#\u0027\u003e\u003cimg alt=\u0027 \u0027 src=\u0027https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1_rss.png\u0027 style=\u0027border: none\u0027 \/\u003e\u003c\/a\u003e\u003c\/noscript\u003e\u003cobject class=\u0027tableauViz\u0027  style=\u0027display:none;\u0027\u003e\u003cparam name=\u0027host_url\u0027 value=\u0027https%3A%2F%2Fpublic.tableau.com%2F\u0027 \/\u003e \u003cparam name=\u0027embed_code_version\u0027 value=\u00273\u0027 \/\u003e \u003cparam name=\u0027site_root\u0027 value=\u0027\u0027 \/\u003e\u003cparam name=\u0027name\u0027 value=\u0027TableauDashboardSample\u0026#47;Dashboard1\u0027 \/\u003e\u003cparam name=\u0027tabs\u0027 value=\u0027no\u0027 \/\u003e\u003cparam name=\u0027toolbar\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027static_image\u0027 value=\u0027https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1.png\u0027 \/\u003e \u003cparam name=\u0027animate_transition\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_static_image\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_spinner\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_overlay\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_count\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027language\u0027 value=\u0027en\u0027 \/\u003e\u003cparam name=\u0027filter\u0027 value=\u0027publish=yes\u0027 \/\u003e\u003c\/object\u003e\u003c\/div\u003e\u003cscript type=\u0027text\/javascript\u0027\u003evar divElement = document.getElementById(\u0027viz1599000528258\u0027);var vizElement = divElement.getElementsByTagName(\u0027object\u0027)[0];if ( divElement.offsetWidth \u003e 800 ) { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=(divElement.offsetWidth*0.75)\u002b\u0027px\u0027;} else if ( divElement.offsetWidth \u003e 500 ) { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=(divElement.offsetWidth*0.75)\u002b\u0027px\u0027;} else { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=\u0027827px\u0027;}var scriptElement = document.createElement(\u0027script\u0027);scriptElement.src = \u0027https:\/\/public.tableau.com\/javascripts\/api\/viz_v1.js\u0027;vizElement.parentNode.insertBefore(scriptElement, vizElement);\u003c\/script\u003e");
+    window.document.getElementById('vizIdArea').innerText = `"vacío"`;
+    window.document.getElementById('prefixIdArea').innerText = `"vacío"`;
+    window.document.getElementById('workbookNameArea').innerText = `"vacío"`;
+    window.document.getElementById('worksheetNameArea').innerText = `"vacío"`;
+    window.document.getElementById('shortcodeArea').innerText = `"vacío"`;
+    if (window.document.getElementById('defaultVizLoaded') === null) {
+      window.document.getElementById('vizArea').innerHTML = `"\u003cdiv id='defaultVizLoaded'\u003e\u003c/div\u003e\u003cdiv class='tableauPlaceholder' id='viz1599000528258' style='position: relative'\u003e\u003cnoscript\u003e\u003ca href='#'\u003e\u003cimg alt=' ' src='https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1_rss.png' style='border: none' /\u003e\u003c/a\u003e\u003c/noscript\u003e\u003cobject class='tableauViz'  style='display:none;'\u003e\u003cparam name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /\u003e \u003cparam name='embed_code_version' value='3' /\u003e \u003cparam name='site_root' value='' /\u003e\u003cparam name='name' value='TableauDashboardSample\u0026#47;Dashboard1' /\u003e\u003cparam name='tabs' value='no' /\u003e\u003cparam name='toolbar' value='yes' /\u003e\u003cparam name='static_image' value='https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1.png' /\u003e \u003cparam name='animate_transition' value='yes' /\u003e\u003cparam name='display_static_image' value='yes' /\u003e\u003cparam name='display_spinner' value='yes' /\u003e\u003cparam name='display_overlay' value='yes' /\u003e\u003cparam name='display_count' value='yes' /\u003e\u003cparam name='language' value='en' /\u003e\u003cparam name='filter' value='publish=yes' /\u003e\u003c/object\u003e\u003c/div\u003e\u003cscript type='text/javascript'\u003evar divElement = document.getElementById('viz1599000528258');var vizElement = divElement.getElementsByTagName('object')[0];if ( divElement.offsetWidth \u003e 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth \u003e 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);\u003c/script\u003e"`;
     }
   }
 
   function CopyToClipboard(srcId, destId, tooltipSrc, tooltipMsg) {
-    $('#' + destId).val($('#' + srcId).text());
-    $('#' + destId).css("display", "block");
-    $('#' + destId).select();
+    window.document.getElementById(destId).value = window.document.getElementById(srcId).innerText;
+    window.document.getElementById(destId).style.display = 'block';
+    window.document.getElementById(destId).select();
     document.execCommand('copy');
-    $('#' + destId).css("display", "none");
-    let tooltipId = $('#' + tooltipSrc).attr('aria-describedby');
-    $('#' + tooltipId + " div.tooltip-inner").text(tooltipMsg);
+    window.document.getElementById(destId).style.display = 'none';
   }
 
   function ShowBtnTooltip(isSuccessful) {
     if (isSuccessful === true) {
-      $('#parseButton').tooltip('show');
-      let tooltipId = $('#parseButton').attr('aria-describedby');
-  
-      setTimeout(() => { 
-        $('#parseButton').tooltip('hide');
+      new bootstrap.Tooltip(window.document.getElementById('parseButton')).show();
+      setTimeout(() => {
+        new bootstrap.Tooltip(window.document.getElementById('parseButton')).hide();
       }, 1000);
     } else {
-      $('#parseButton').tooltip('show');
-      let tooltipId = $('#parseButton').attr('aria-describedby');
-      $('#' + tooltipId + " div.tooltip-inner").text("Código Invalido");
-      $('#parseButton').removeClass('btn-primary');
-      $('#parseButton').addClass('btn-danger');
+      new bootstrap.Tooltip(window.document.getElementById('parseButton')).show();
+      let tooltipId = new bootstrap.Tooltip(window.document.getElementById('parseButton')).getAttribute('aria-describedby');
+      window.document.querySelector(`#${tooltipId} div.tooltip-inner`).innerText = `"Código Invalido"`;
+      window.document.getElementById('parseButton').classList.remove('btn-primary');
+      window.document.getElementById('parseButton').classList.add('btn-danger');
   
       setTimeout(() => { 
-        $('#parseButton').tooltip('hide');
-        $('#parseButton').removeClass('btn-danger');
-        $('#parseButton').addClass('btn-primary');
+        bootstrap.Tooltip.getInstance(window.document.getElementById('parseButton')).hide();
+        window.document.getElementById('parseButton').classList.remove('btn-danger');
+        window.document.getElementById('parseButton').classList.add('btn-primary');
       }, 1000);
     }
   }
@@ -625,7 +670,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
     placeholder='Pega el Código Aquí'>
   <div class="input-group-append">
     <button class="btn btn-primary" type="button" onclick="ParseShareCode()" id="parseButton"
-    data-toggle="tooltip" data-placement="right" title="Analizado!" data-animation="true" data-trigger="manual">
+    data-bs-toggle="tooltip" data-bs-placement="right" title="Analizado!" data-bs-animation="true" data-trigger="manual">
       
       Extraer
       
@@ -644,7 +689,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   <label id="instagram-postId-code" class="form-control"><code id="vizIdArea">vacío</code></label>
   <div class="input-group-append">
     <button class="btn btn-dark" type="button" onclick="CopyToClipboard('vizIdArea', 'copyVizIdArea', 'vizIdAreaBtn', 'Copiado!')" id="vizIdAreaBtn"
-    data-toggle="tooltip" data-placement="right" title='Copiar Identificador de Viz' data-animation="true">
+    data-bs-toggle="tooltip" data-bs-placement="right" title='Copiar Identificador de Viz' data-bs-animation="true" data-trigger="manual">
     Copiar
     </button>
     <input type="text" id="copyVizIdArea" style="display: none;">
@@ -662,7 +707,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   <label id="instagram-postId-code" class="form-control"><code id="prefixIdArea">vacío</code></label>
   <div class="input-group-append">
     <button class="btn btn-dark" type="button" onclick="CopyToClipboard('prefixIdArea', 'copyPrefixIdArea', 'prefixIdAreaBtn', 'Copiado!')" id="prefixIdAreaBtn"
-    data-toggle="tooltip" data-placement="right" title='Copiar Prefijo' data-animation="true">
+    data-bs-toggle="tooltip" data-bs-placement="right" title='Copiar Prefijo' data-bs-animation="true">
     Copiar
     </button>
     <input type="text" id="copyPrefixIdArea" style="display: none;">
@@ -680,7 +725,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   <label id="instagram-postId-code" class="form-control"><code id="workbookNameArea">vacío</code></label>
   <div class="input-group-append">
     <button class="btn btn-dark" type="button" onclick="CopyToClipboard('workbookNameArea', 'copyWorkbookNameArea', 'workbookNameAreaBtn', 'Copiado!')" id="workbookNameAreaBtn"
-    data-toggle="tooltip" data-placement="right" title='Copiar Nombre del Workbook' data-animation="true">
+    data-bs-toggle="tooltip" data-bs-placement="right" title='Copiar Nombre del Workbook' data-bs-animation="true">
     Copiar
     </button>
     <input type="text" id="copyWorkbookNameArea" style="display: none;">
@@ -698,7 +743,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   <label id="instagram-postId-code" class="form-control"><code id="worksheetNameArea">vacío</code></label>
   <div class="input-group-append">
     <button class="btn btn-dark" type="button" onclick="CopyToClipboard('worksheetNameArea', 'copyWorkbookNameArea', 'worksheetNameAreaBtn', 'Copiado!')" id="worksheetNameAreaBtn"
-    data-toggle="tooltip" data-placement="right" title='Copiar Nombre del Worksheet' data-animation="true">
+    data-bs-toggle="tooltip" data-bs-placement="right" title='Copiar Nombre del Worksheet' data-bs-animation="true">
     Copiar
     </button>
     <input type="text" id="copyWorksheetNameArea" style="display: none;">
@@ -716,18 +761,12 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   <label id="instagram-postId-codeUrl" class="form-control"><code id="shortcodeArea">vacío</code></label>
   <div class="input-group-append">
     <button class="btn btn-dark" type="button" onclick="CopyToClipboard('shortcodeArea', 'copyShortcodeArea', 'shortcodeAreaBtn', 'Copiado!')" id="shortcodeAreaBtn"
-    data-toggle="tooltip" data-placement="right" title='Copiar Código del ShortCode' data-animation="true">
+    data-bs-toggle="tooltip" data-bs-placement="right" title='Copiar Código del ShortCode' data-bs-animation="true">
     Copiar
     </button>
     <input type="text" id="copyShortcodeArea" style="display: none;">
   </div>
 </div>
-<script type="text/javascript">
-
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({delay: { "show": 200, "hide": 200 }});
-  })
-</script>
 
 
 <p>Viz Embebida Resultante:</p>

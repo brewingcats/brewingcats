@@ -46,39 +46,15 @@
 <meta name="twitter:title" content="Legend of Zelda: Breath of the Wild"/>
 <meta name="twitter:description" content="Alfabetos, mapas y más de Legend of Zelda: BOTW"/>
 
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-85767008-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85767008-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-85767008-3');
-    </script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.32" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -90,7 +66,7 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.32';
+      BrewingCatsCore.Config.SiteVersion = '4.33';
       BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
       BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
       BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
@@ -111,8 +87,8 @@ if (!doNotTrack) {
         {
           'url': window.location.href,
           'siteVersion': version,
-          'height': $(window).height(),
-          'width': $(window).width(),
+          'height': window.innerHeight,
+          'width': window.innerWidth,
           'timezone': timeZoneMsg
         }
       );
@@ -126,11 +102,11 @@ if (!doNotTrack) {
           stats
         );
 
-        $('span[tag-id="site-page-views-footer"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-site-views"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-page-views"]').html(stats.PageViews);
-        $('button[tag-id="stats-widget-user-site-views"]').html(stats.UserSiteViews);
-        $('button[tag-id="stats-widget-user-page-views"]').html(stats.UserPageViews);
+        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
       });
     </script>
     
@@ -340,13 +316,13 @@ Caracteres permitidos son <code>a-z</code>, <code>0-9</code>, <code>-</code>, <c
   }
 
   function doTranslate(id) {
-    let msgArea = $('[tagId="messageDisplay-' + id + '"]');
-    msgArea.html('');
-    let transArea = $('[tagId="transResult-' + id + '"]');
-    transArea.html('');
-    let text = $('[tagId="transText-' + id + '"]').val();
+    let msgArea = window.document.querySelector(`[tagId="messageDisplay-${id}"]`);
+    msgArea.innerHTML = '';
+    let transArea = window.document.querySelector(`[tagId="transResult-${id}"]`);
+    transArea.innerHTML = '';
+    let text = window.document.querySelector(`[tagId="transText-${id}"]`).value;
     if (text === '' || text === null || text === undefined) {
-      msgArea.html('<p class="text-danger">Invalid input text</p>');
+      msgArea.innerHTML = '<p class="text-danger">Invalid input text</p>';
       return;
     }
 
@@ -362,12 +338,12 @@ Caracteres permitidos son <code>a-z</code>, <code>0-9</code>, <code>-</code>, <c
     );
 
     let styleNumber = 1;
-    let style2Radio = $('[tagId="goldenStyle-' + id + '"]');
-    if (style2Radio.is(":checked")) {
+    let style2Radio = window.document.querySelector(`[tagId="goldenStyle-${id}"]`);
+    if (style2Radio.checked) {
       styleNumber = 2;
     }
 
-    console.log('Style Number: ' + styleNumber);
+    
     text = text.toLowerCase();
     let supportedChars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0','-','.','!','?'];
     let unsupportedFound = [];
@@ -401,7 +377,7 @@ Caracteres permitidos son <code>a-z</code>, <code>0-9</code>, <code>-</code>, <c
       }
     }
     
-    transArea.html(imgs);
+    transArea.innerHTML = imgs;
     if (unsupportedFound.length > 0) {
       msgArea.html('<p class="text-danger">Ignored unsupported characters: "' + unsupportedFound.join('", "') + '"</p>');
       BrewingCatsCore.Logger.traceWarn(
@@ -422,10 +398,45 @@ Caracteres permitidos son <code>a-z</code>, <code>0-9</code>, <code>-</code>, <c
 por 
 
 
-<a href="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/www.zeldadungeon.net\/breath-of-the-wild-interactive-map\/', 'ZeldaDungeon.net')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">ZeldaDungeon.net</a>
+
+
+<a href="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" target="_blank" class="aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw=="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/www.zeldadungeon.net\/breath-of-the-wild-interactive-map\/', 'ZeldaDungeon.net')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base')"
+>ZeldaDungeon.net</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 . Debido a la gran cantidad de información del viz recomiendo reducir los datos mediante
 el uso de filtros por tipo de objetos o limitando por región. Todos los objetos tienen enlaces de referencia así como el nombre en alfabeto de BOTW</p>
 
@@ -486,10 +497,45 @@ el uso de filtros por tipo de objetos o limitando por región. Todos los objetos
 <p>El mapa interactivo completo puede ser visto directamente en 
 
 
-<a href="https://public.tableau.com/profile/hugo.belin#!/vizhome/ZeldaBreathoftheWildInteractiveMap/InteractiveMap" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/public.tableau.com\/profile\/hugo.belin#!\/vizhome\/ZeldaBreathoftheWildInteractiveMap\/InteractiveMap', 'Tableau Public')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Tableau Public</a>
+
+
+<a href="https://public.tableau.com/profile/hugo.belin#!/vizhome/ZeldaBreathoftheWildInteractiveMap/InteractiveMap" target="_blank" class="aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFw"
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/public.tableau.com\/profile\/hugo.belin#!\/vizhome\/ZeldaBreathoftheWildInteractiveMap\/InteractiveMap', 'Tableau Public')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwHover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwBase')"
+>Tableau Public</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFw");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwBase"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwBase"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwHover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvdml6aG9tZS9aZWxkYUJyZWF0aG9mdGhlV2lsZEludGVyYWN0aXZlTWFwL0ludGVyYWN0aXZlTWFwHover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 </p>
 <h2 id="mapa-interactivo-detalles-de-la-creación">Mapa Interactivo. Detalles de la creación</h2>
 <p>Para poder crear este mapa interactivo se tuvo que hacer lo siguiente:</p>
@@ -497,26 +543,131 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Tableau Public</a>
 <li>Obtener una imagen vacía de todo el mapa jugable, utilicé 
 
 
-<a href="https://imgur.com/gaCjFoi" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/imgur.com\/gaCjFoi', 'esta imagen gigantesca de 150MB y 24k por 20k pixeles')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">esta imagen gigantesca de 150MB y 24k por 20k pixeles</a>
+
+
+<a href="https://imgur.com/gaCjFoi" target="_blank" class="aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ=="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/imgur.com\/gaCjFoi', 'esta imagen gigantesca de 150MB y 24k por 20k pixeles')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Base')"
+>esta imagen gigantesca de 150MB y 24k por 20k pixeles</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9pbWd1ci5jb20vZ2FDakZvaQ==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 </li>
 <li>Coloqué todos los objetos del mapa encontrados en 
 
 
-<a href="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/www.zeldadungeon.net\/breath-of-the-wild-interactive-map\/', 'este mapa interactivo de Zelda')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">este mapa interactivo de Zelda</a>
+
+
+<a href="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" target="_blank" class="aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw=="
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/www.zeldadungeon.net\/breath-of-the-wild-interactive-map\/', 'este mapa interactivo de Zelda')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base')"
+>este mapa interactivo de Zelda</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly93d3cuemVsZGFkdW5nZW9uLm5ldC9icmVhdGgtb2YtdGhlLXdpbGQtaW50ZXJhY3RpdmUtbWFwLw==Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 </li>
 <li>Para acelerar el proceso cree 
 
 
-<a href="/es/posts/projects/software/polygonmaker/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('\/es\/posts\/projects\/software\/polygonmaker\/', 'esta página')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">esta página</a>
+
+
+<a href="/es/posts/projects/software/polygonmaker/" target="_blank" class="L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8="
+onclick="BrewingCatsCore.LinkActions.openLink('\/es\/posts\/projects\/software\/polygonmaker\/', 'esta página')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Base')"
+>esta página</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L2VzL3Bvc3RzL3Byb2plY3RzL3NvZnR3YXJlL3BvbHlnb25tYWtlci8=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  que permite capturar las coordenadas de los clicks sobre imagenes junto con etiquetas que fueron
 usadas para denominar regiones</li>
 <li>Despues de colectar alrededor de 6 mil puntos construí el mapa con doble eje mostrado arriba</li>

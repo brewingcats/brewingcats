@@ -46,39 +46,15 @@
 <meta name="twitter:title" content="Instaparser"/>
 <meta name="twitter:description" content="Utilidad básica para encontrar y extraer IDs de fotos de Instagram, estos IDs provienen de la URL de la foto con el fin de embeber esos artículos"/>
 
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-85767008-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85767008-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-85767008-3');
-    </script>
-    
-    <script type='text/javascript' src="/javascript/bcats.js#4.32" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -90,7 +66,7 @@ if (!doNotTrack) {
       BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
       BrewingCatsCore.Config.LinkHoverColor = '#C00000';
       BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.32';
+      BrewingCatsCore.Config.SiteVersion = '4.33';
       BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
       BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
       BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
@@ -111,8 +87,8 @@ if (!doNotTrack) {
         {
           'url': window.location.href,
           'siteVersion': version,
-          'height': $(window).height(),
-          'width': $(window).width(),
+          'height': window.innerHeight,
+          'width': window.innerWidth,
           'timezone': timeZoneMsg
         }
       );
@@ -126,11 +102,11 @@ if (!doNotTrack) {
           stats
         );
 
-        $('span[tag-id="site-page-views-footer"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-site-views"]').html(stats.SiteViews);
-        $('button[tag-id="stats-widget-page-views"]').html(stats.PageViews);
-        $('button[tag-id="stats-widget-user-site-views"]').html(stats.UserSiteViews);
-        $('button[tag-id="stats-widget-user-page-views"]').html(stats.UserPageViews);
+        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
+        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
       });
     </script>
     
@@ -310,10 +286,45 @@ padding-left: 3px;">S</span>encilla utilidad para obtener ids the fotos de Insta
 
 
 
-<a href="https://public.tableau.com/profile/hugo.belin#!/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/public.tableau.com\/profile\/hugo.belin#!\/', 'Vizzes de Tableau')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Vizzes de Tableau</a>
+
+
+<a href="https://public.tableau.com/profile/hugo.belin#!/" target="_blank" class="aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEv"
+onclick="BrewingCatsCore.LinkActions.openLink('https:\/\/public.tableau.com\/profile\/hugo.belin#!\/', 'Vizzes de Tableau')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvHover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvBase')"
+>Vizzes de Tableau</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEv");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvBase"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvBase"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvHover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["aHR0cHM6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9odWdvLmJlbGluIyEvHover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
  😉 )</p>
 <p><em>Instrucciones:</em></p>
 <ul>
@@ -321,10 +332,45 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">Vizzes de Tableau</a>
 <li>Podrá ver el fragmento que identifica la foto que puede ser usado con nuestro 
 
 
-<a href="/posts/instagram/" target="_blank" onclick="BrewingCatsCore.LinkActions.openLink('\/posts\/instagram\/', 'sitio especial de Instagram')" 
-style="color: rgb(34, 34, 34); box-shadow: rgb(255, 153, 0) 0px -4px 0px inset; text-decoration: none; " 
-onMouseOver="BrewingCatsCore.LinkActions.mouseover(this)"
-onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instagram</a>
+
+
+<a href="/posts/instagram/" target="_blank" class="L3Bvc3RzL2luc3RhZ3JhbS8="
+onclick="BrewingCatsCore.LinkActions.openLink('\/posts\/instagram\/', 'sitio especial de Instagram')" 
+style="color: rgb(34, 34, 34); text-decoration: none; " 
+onMouseOver="BrewingCatsCore.LinkActions.mouseover(this, 'L3Bvc3RzL2luc3RhZ3JhbS8=Hover')"
+onMouseOut="BrewingCatsCore.LinkActions.mouseout(this, 'L3Bvc3RzL2luc3RhZ3JhbS8=Base')"
+>sitio especial de Instagram</a>
+
+<script>
+  (() => {
+    let items = document.getElementsByClassName("L3Bvc3RzL2luc3RhZ3JhbS8=");
+    let baseColor = "ThemeColor";
+    
+    for (let i = 0; i < items.length; i++) {
+      let boxShadow = `rgb(${window.BrewingCatsCore.Config.ThemeColor}) 0px -4px 0px inset`;
+      if (baseColor !== 'ThemeColor') {
+        boxShadow = `rgb(${baseColor}) 0px -4px 0px inset`;
+      }
+
+      items[i].style.boxShadow = boxShadow;
+    }
+
+    if (baseColor !== 'ThemeColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL2luc3RhZ3JhbS8=Base"] = baseColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL2luc3RhZ3JhbS8=Base"] = 
+        window.BrewingCatsCore.Config.ThemeColor;
+    }
+
+    let hoverColor = "LinkHoverColor";
+    if (hoverColor !== 'LinkHoverColor') {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL2luc3RhZ3JhbS8=Hover"] = hoverColor;
+    } else {
+      window.BrewingCatsCore.Config.ClickCustom["L3Bvc3RzL2luc3RhZ3JhbS8=Hover"] = 
+        window.BrewingCatsCore.Config.LinkHoverColor;
+    }
+  })();
+</script>
 , puede agregar el siguiente fragmento a la URL
 <code>?insta=&lt;postId&gt;</code> como se muestra</li>
 <li>Obtendrá también un enlace al sitio de Instagram con el fragmento añadido el cuál puede abrir. Siéntase en libertad de embeber ese sitio en otros lados</li>
@@ -334,7 +380,7 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
 
 <script type="text/javascript">
   function LoadInstagramPost() {
-    let inputVal = $('#instagram-url-input').val();
+    let inputVal = window.document.getElementById('instagram-url-input').innerHTML;
     BrewingCatsCore.Logger.traceInfo(
       `Instaparser Component`,
       'component.instaparser',
@@ -349,25 +395,25 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
     if (inputVal !== '' && inputVal !== null) {
       let isValidUrl = validURL(inputVal);
       if (!isValidUrl) {
-        $('#parseButton').tooltip('show');
-        let tooltipId = $('#parseButton').attr('aria-describedby');
-        $('#' + tooltipId + " div.tooltip-inner").text("URL Incorrecta");
-        $('#parseButton').removeClass('btn-primary');
-        $('#parseButton').addClass('btn-danger');
+        window.document.getElementById('parseButton').tooltip('show');
+        let tooltipId = window.document.getElementById('parseButton').getAttribute('aria-describedby');
+        window.document.querySelector(`${tooltipId} div.tooltip-inner`).innerHTML = "URL Incorrecta";
+        window.document.getElementById('parseButton').classList.remove('btn-primary');
+        window.document.getElementById('parseButton').classList.add('btn-danger');
 
-        setTimeout(() => { 
-          $('#parseButton').tooltip('hide');
-          $('#parseButton').removeClass('btn-danger');
-          $('#parseButton').addClass('btn-primary');
+        setTimeout(() => {
+          window.document.getElementById('parseButton').tooltip('hide');
+          window.document.getElementById('parseButton').classList.remove('btn-danger');
+          window.document.getElementById('parseButton').classList.add('btn-primary');
         }, 1000);
       } else {
         let instaUrl = new  URL(inputVal);
         if (instaUrl.pathname.startsWith('/p/')) {
           let segment = instaUrl.pathname.replace('/p/', '').replace('/', '');
-          $('#instagramFragmentCode').text(segment);
-          $('#instagramUrlSearch').text('?insta=' + segment);
-          $('#urlToEmbedLink').attr('href', '/posts/instagram/?insta=' + segment);
-          $('#instagramUrlCode').text(location.origin + '/posts/instagram/?insta=' + segment);
+          window.document.getElementById('instagramFragmentCode').innerHTML = segment;
+          window.document.getElementById('instagramUrlSearch').innerHTML = `?insta=${segment}`;
+          window.document.getElementById('urlToEmbedLink').setAttribute('href', `/posts/instagram/?insta=${segment}`);
+          window.document.getElementById('instagramUrlCode').innerHTML = `${location.origin}/posts/instagram/?insta=${segment}`;
           let lang = "es";
           let tag = '';
           if (lang === "en") {
@@ -377,39 +423,39 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
           }
 
           window.AutoInstagram.Control.QueryAndAddInstagramPost(segment, tag);
-          $('#urlToEmbedLink').tooltip('show');
-          $('#parseButton').tooltip('show');
+          window.document.getElementById('urlToEmbedLink').tooltip('show');
+          window.document.getElementById('parseButton').tooltip('show');
           
           setTimeout(() => { 
-            $('#urlToEmbedLink').tooltip('hide');
-            $('#parseButton').tooltip('hide');
+            window.document.getElementById('urlToEmbedLink').tooltip('hide');
+            window.document.getElementById('parseButton').tooltip('hide');
           }, 1000);
         } else {
           
-          $('#parseButton').tooltip('show');
-          let tooltipId = $('#parseButton').attr('aria-describedby');
-          $('#' + tooltipId + " div.tooltip-inner").text("URL Incorrecta");
-          $('#parseButton').removeClass('btn-primary');
-          $('#parseButton').addClass('btn-danger');
+          window.document.getElementById('parseButton').tooltip('show');
+          let tooltipId = window.document.getElementById('parseButton').getAttribute('aria-describedby');
+          window.document.getElementById(`${tooltipId} div.tooltip-inner`).innerHTML = "URL Incorrecta";
+          window.document.getElementById('parseButton').classList.remove('btn-primary');
+          window.document.getElementById('parseButton').classList.add('btn-danger');
 
-          setTimeout(() => { 
-            $('#parseButton').tooltip('hide');
-            $('#parseButton').removeClass('btn-danger');
-            $('#parseButton').addClass('btn-primary');
+          setTimeout(() => {
+            window.document.getElementById('parseButton').tooltip('hide');
+            window.document.getElementById('parseButton').classList.remove('btn-danger');
+            window.document.getElementById('parseButton').classList.add('btn-primary');
           }, 1000);
         }
       }
     } else {
-      $('#parseButton').tooltip('show');
-      let tooltipId = $('#parseButton').attr('aria-describedby');
-      $('#' + tooltipId + " div.tooltip-inner").text("URL Incorrecta");
-      $('#parseButton').removeClass('btn-primary');
-      $('#parseButton').addClass('btn-danger');
+      window.document.getElementById('parseButton').tooltip('show');
+      let tooltipId = window.document.getElementById('parseButton').attributes.getNamedItem('aria-describedby').value;
+      window.document.getElementById(`${tooltipId} div.tooltip-inner`).innerHTML = "URL Incorrecta";
+      window.document.getElementById('parseButton').classList.remove('btn-primary');
+      window.document.getElementById('parseButton').classList.add('btn-danger');
 
-      setTimeout(() => { 
-        $('#parseButton').tooltip('hide');
-        $('#parseButton').removeClass('btn-danger');
-        $('#parseButton').addClass('btn-primary');
+      setTimeout(() => {
+        window.document.getElementById('parseButton').tooltip('hide');
+        window.document.getElementById('parseButton').classList.remove('btn-danger');
+        window.document.getElementById('parseButton').classList.add('btn-primary');
       }, 1000);
     }
   }
@@ -425,13 +471,14 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
       lang = 'Copiado!'
     }
     
-    $('#copyFragmentArea').val($('#instagramUrlSearch').text());
-    $('#copyFragmentArea').css("display", "block");
-    $('#copyFragmentArea').select();
+    window.document.getElementById('copyFragmentArea').innerHTML = window.document.getElementById('instagramUrlSearch').innerHTML;
+    window.document.getElementById('copyFragmentArea').style.display = 'block';
+    window.document.getElementById('copyFragmentArea').select();
+    
     document.execCommand('copy');
-    $('#copyFragmentArea').css("display", "none");
-    let tooltipId = $('#copyFragmentButton').attr('aria-describedby');
-    $('#' + tooltipId + " div.tooltip-inner").text(lang);
+    window.document.getElementById('copyFragmentArea').style.display = 'none';
+    let tooltipId = window.document.getElementById('copyFragmentButton').attributes.getNamedItem('aria-describedby').value;
+    window.document.querySelector(`${tooltipId} div.tooltip-inner`).innerText = lang;
   }
   
   function CopyUrl() {
@@ -445,13 +492,14 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
       lang = 'Copiado!'
     }
 
-    $('#copyUrlArea').val($('#instagramUrlCode').text());
-    $('#copyUrlArea').css("display", "block");
-    $('#copyUrlArea').select();
+    window.document.getElementById('copyUrlArea').innerHTML = window.document.getElementById('instagramUrlCode').innerText;
+    window.document.getElementById('copyUrlArea').style.display = 'block';
+    window.document.getElementById('copyUrlArea').select();
     document.execCommand('copy');
-    $('#copyUrlArea').css("display", "none");
-    let tooltipId = $('#copyUrlButton').attr('aria-describedby');
-    $('#' + tooltipId + " div.tooltip-inner").text(lang);
+    
+    window.document.getElementById('copyUrlArea').style.display = 'none';
+    let tooltipId = window.document.getElementById('copyUrlButton').attributes.getNamedItem('aria-describedby').value;
+    window.document.querySelector(`${tooltipId} div.tooltip-inner`).innerHTML = lang;
   }
 
   function validURL(str) {
@@ -467,17 +515,17 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
   function Localize() {
     let lang = "es";
     if (lang === "es") {
-      $('#enterInstagramPost').text('Ingrese el URL de la Foto de Instagram:');
-      $('#parseButton').text('Extraer');
-      $('#instagram-postId-field').text('Identificador de Foto de Instagram');
-      $('#instagramFragmentCode').text('ninguno');
-      $('#copyFragmentButton').text('Copiar');
-      $('#copyFragmentButton').attr('title', 'Copiar Fragmento');
-      $('#urlToEmbedLink').text('URL para embeber');
-      $('#urlToEmbedLink').attr('title', 'Actualizado!');
-      $('#instagramUrlCode').text('ninguna');
-      $('#copyUrlButton').text('Copiar');
-      $('#copyUrlButton').attr('title', 'Copiar URL');
+      window.document.getElementById('enterInstagramPost').innerHTML = 'Ingrese el URL de la Foto de Instagram:';
+      window.document.getElementById('parseButton').innerHTML = 'Extraer';
+      window.document.getElementById('instagram-postId-field'),innerHTML = 'Identificador de Foto de Instagram';
+      window.document.getElementById('instagramFragmentCode').innerHTML = 'ninguno';
+      window.document.getElementById('copyFragmentButton').innerHTML = 'Copiar';
+      window.document.getElementById('copyFragmentButton').attributes.setNamedItem('title', 'Copiar Fragmento');
+      window.document.getElementById('urlToEmbedLink').innerHTML = 'URL para embeber';
+      window.document.getElementById('urlToEmbedLink').attributes.setNamedItem('title', 'Actualizado!');
+      window.document.getElementById('instagramUrlCode').innerHTML = 'ninguna';
+      window.document.getElementById('copyUrlButton').innerHTML = 'Copiar';
+      window.document.getElementById('copyUrlButton').attributes.setNamedItem('title', 'Copiar URL');
     }
   }
 </script>
@@ -525,9 +573,9 @@ onMouseOut="BrewingCatsCore.LinkActions.mouseout(this)">sitio especial de Instag
 <script type="text/javascript">
   Localize();
 
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({delay: { "show": 200, "hide": 300 }});
-  })
+  window.addEventListener('onload', () => {
+    window.document.querySelector('[data-toggle="tooltip"]').tooltip({delay: { "show": 200, "hide": 300 }});
+  }, false);
 </script>
 <p>Foto de Instagram:</p>
 <p>Instagram-Embebido-Aqui</p>
