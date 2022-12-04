@@ -51,54 +51,75 @@
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
     <script>
-      BrewingCatsCore.Config.TelemetryUrl = '{{ .Site.Params.telemetryUrl }}';
-      BrewingCatsCore.Config.StatsUrl = '{{ .Site.Params.statsUrl }}';
-      BrewingCatsCore.Config.ProjectId = '{{ .Site.Params.projectId }}';
-      BrewingCatsCore.Config.ThemeColor = '{{ $.Page.Site.Params.theme_color }}';
-      BrewingCatsCore.Config.LinkHoverColor = '{{ $.Page.Site.Params.link_hover }}';
-      BrewingCatsCore.Config.UseGenericGdpr = '{{ $.Page.Site.Params.useGenericGdpr }}' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '{{ .Site.Params.siteVersion }}';
-      BrewingCatsCore.Config.TelemetryDataUrl = '{{ .Site.Params.telemetryDataUrl }}';
-      BrewingCatsCore.Config.TelemetryDataBaseName = '{{ .Site.Params.telemetryDataBaseName }}';
-      BrewingCatsCore.Config.TelemetryDataEnv = '{{ .Site.Params.telemetryDataEnv }}';
-      // Initialization happens here
-      BrewingCatsCore.Control.Init();
-      let version = BrewingCatsCore.Config.SiteVersion;
-      let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
-      let timeZoneMsg = `UTC+${timeZone}`;
-      if (timeZone < 0) {
-        timeZoneMsg = `UTC${timeZone}`;
-      }
-
-      BrewingCatsCore.Logger.traceInfo(
-        `Loading: ${window.location.href}`,
-        'document.body',
-        'tagId_1',
-        'Bootstrap',
-        {
-          'url': window.location.href,
-          'siteVersion': version,
-          'height': window.innerHeight,
-          'width': window.innerWidth,
-          'timezone': timeZoneMsg
+      (() => {
+        BrewingCatsCore.Config.TelemetryUrl = '{{ .Site.Params.telemetryUrl }}';
+        BrewingCatsCore.Config.StatsUrl = '{{ .Site.Params.statsUrl }}';
+        BrewingCatsCore.Config.ProjectId = '{{ .Site.Params.projectId }}';
+        BrewingCatsCore.Config.ThemeColor = '{{ $.Page.Site.Params.theme_color }}';
+        BrewingCatsCore.Config.LinkHoverColor = '{{ $.Page.Site.Params.link_hover }}';
+        BrewingCatsCore.Config.UseGenericGdpr = '{{ $.Page.Site.Params.useGenericGdpr }}' === 'true';
+        BrewingCatsCore.Config.SiteVersion = '{{ .Site.Params.siteVersion }}';
+        BrewingCatsCore.Config.TelemetryDataUrl = '{{ .Site.Params.telemetryDataUrl }}';
+        BrewingCatsCore.Config.TelemetryDataBaseName = '{{ .Site.Params.telemetryDataBaseName }}';
+        BrewingCatsCore.Config.TelemetryDataEnv = '{{ .Site.Params.telemetryDataEnv }}';
+        // Initialization happens here
+        BrewingCatsCore.Control.Init();
+        let version = BrewingCatsCore.Config.SiteVersion;
+        let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
+        let timeZoneMsg = `UTC+${timeZone}`;
+        if (timeZone < 0) {
+          timeZoneMsg = `UTC${timeZone}`;
         }
-      );
-
-      BrewingCatsCore.Control.UpdateStats((stats) => {
+  
         BrewingCatsCore.Logger.traceInfo(
-          `Stats for: ${window.location.href}`,
+          `Loading: ${window.location.href}`,
           'document.body',
-          'tagId_12',
+          'tagId_1',
           'Bootstrap',
-          stats
+          {
+            'url': window.location.href,
+            'siteVersion': version,
+            'height': window.innerHeight,
+            'width': window.innerWidth,
+            'timezone': timeZoneMsg
+          }
         );
+  
+        BrewingCatsCore.Control.UpdateStats((stats) => {
+          BrewingCatsCore.Logger.traceInfo(
+            `Stats for: ${window.location.href}`,
+            'document.body',
+            'tagId_12',
+            'Bootstrap',
+            stats
+          );
+  
+          let selection = window.document.querySelector('span[tag-id="site-page-views-footer"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.SiteViews;
+          }
 
-        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
-        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
-      });
+          selection = window.document.querySelector('button[tag-id="stats-widget-site-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.PageViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-page-views"]');
+          if (selection !== null) {
+            selection = stats.PageViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-user-site-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.UserSiteViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-user-page-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.UserPageViews;
+          }
+        });
+      })();
     </script>
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main class="pb7" role="main">
