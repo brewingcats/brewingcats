@@ -7,7 +7,7 @@
     <title>Instagram | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Custom post to embed Instagram posts">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.107.0">
     
     
     
@@ -54,60 +54,81 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
-    <script type='text/javascript' src="/javascript/bcats.min.js#4.33" ></script>
+    <script type='text/javascript' src="/javascript/bcats.min.js#4.34" ></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
 
     <script>
-      BrewingCatsCore.Config.TelemetryUrl = 'https:\/\/us-central1-brewingcats.cloudfunctions.net\/productionLogger';
-      BrewingCatsCore.Config.StatsUrl = 'https:\/\/us-central1-brewingcats.cloudfunctions.net\/stats';
-      BrewingCatsCore.Config.ProjectId = 'BrewingCats';
-      BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
-      BrewingCatsCore.Config.LinkHoverColor = '#C00000';
-      BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
-      BrewingCatsCore.Config.SiteVersion = '4.33';
-      BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
-      BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
-      BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
-      
-      BrewingCatsCore.Control.Init();
-      let version = BrewingCatsCore.Config.SiteVersion;
-      let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
-      let timeZoneMsg = `UTC+${timeZone}`;
-      if (timeZone < 0) {
-        timeZoneMsg = `UTC${timeZone}`;
-      }
-
-      BrewingCatsCore.Logger.traceInfo(
-        `Loading: ${window.location.href}`,
-        'document.body',
-        'tagId_1',
-        'Bootstrap',
-        {
-          'url': window.location.href,
-          'siteVersion': version,
-          'height': window.innerHeight,
-          'width': window.innerWidth,
-          'timezone': timeZoneMsg
+      (() => {
+        BrewingCatsCore.Config.TelemetryUrl = 'https:\/\/us-central1-brewingcats.cloudfunctions.net\/productionLogger';
+        BrewingCatsCore.Config.StatsUrl = 'https:\/\/us-central1-brewingcats.cloudfunctions.net\/stats';
+        BrewingCatsCore.Config.ProjectId = 'BrewingCats';
+        BrewingCatsCore.Config.ThemeColor = '255, 153, 0';
+        BrewingCatsCore.Config.LinkHoverColor = '#C00000';
+        BrewingCatsCore.Config.UseGenericGdpr = 'false' === 'true';
+        BrewingCatsCore.Config.SiteVersion = '4.34';
+        BrewingCatsCore.Config.TelemetryDataUrl = 'https:\/\/media.brewingcats.com\/telemetry\/';
+        BrewingCatsCore.Config.TelemetryDataBaseName = 'BrewingCats';
+        BrewingCatsCore.Config.TelemetryDataEnv = 'Production';
+        
+        BrewingCatsCore.Control.Init();
+        let version = BrewingCatsCore.Config.SiteVersion;
+        let timeZone = -1 * (new Date().getTimezoneOffset() / 60);
+        let timeZoneMsg = `UTC+${timeZone}`;
+        if (timeZone < 0) {
+          timeZoneMsg = `UTC${timeZone}`;
         }
-      );
-
-      BrewingCatsCore.Control.UpdateStats((stats) => {
+  
         BrewingCatsCore.Logger.traceInfo(
-          `Stats for: ${window.location.href}`,
+          `Loading: ${window.location.href}`,
           'document.body',
-          'tagId_12',
+          'tagId_1',
           'Bootstrap',
-          stats
+          {
+            'url': window.location.href,
+            'siteVersion': version,
+            'height': window.innerHeight,
+            'width': window.innerWidth,
+            'timezone': timeZoneMsg
+          }
         );
+  
+        BrewingCatsCore.Control.UpdateStats((stats) => {
+          BrewingCatsCore.Logger.traceInfo(
+            `Stats for: ${window.location.href}`,
+            'document.body',
+            'tagId_12',
+            'Bootstrap',
+            stats
+          );
+  
+          let selection = window.document.querySelector('span[tag-id="site-page-views-footer"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.SiteViews;
+          }
 
-        window.document.querySelector('span[tag-id="site-page-views-footer"]').innerHTML = stats.SiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-site-views"]').innerHTML = stats.SiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-page-views"]').innerHTML = stats.PageViews;
-        window.document.querySelector('button[tag-id="stats-widget-user-site-views"]').innerHTML = stats.UserSiteViews;
-        window.document.querySelector('button[tag-id="stats-widget-user-page-views"]').innerHTML = stats.UserPageViews;
-      });
+          selection = window.document.querySelector('button[tag-id="stats-widget-site-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.PageViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-page-views"]');
+          if (selection !== null) {
+            selection = stats.PageViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-user-site-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.UserSiteViews;
+          }
+
+          selection = window.document.querySelector('button[tag-id="stats-widget-user-page-views"]');
+          if (selection !== null) {
+            selection.innerHTML = stats.UserPageViews;
+          }
+        });
+      })();
     </script>
     
    
