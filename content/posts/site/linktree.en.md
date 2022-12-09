@@ -15,6 +15,12 @@ description: Link Tree Collection for Promoted Posts
 
 
 {{< cards >}}
+  {{< card 
+  "https://source.unsplash.com/JrZvYuBYzCU/"
+  "https://hugobelin.com/posts/categories/software/animatedviz/"
+  "Make Your Viz Fun with Animations"
+  "A step by step guide for replacing your PowerPoint slides with an animated Tableau dashboard for your next presentation" >}}
+
   {{< card
   "/images/BrewingCatsMain.jpg"
   "https://opensea.io/brewingcats"

@@ -14,6 +14,12 @@ description: Collección de enlaces de contenido que ha sido promovido
 # Lista de Contenido Promovido #
 
 {{< cards >}}
+  {{< card 
+  "https://source.unsplash.com/JrZvYuBYzCU/"
+  "https://hugobelin.com/es/posts/categories/software/animatedviz/"
+  "Haz Tu Viz Más Divertida con Animaciones"
+  "Guía paso a paso de como reemplazar tus diapositivas de PowerPoint con un dashboard de Tableau para tu siguiente presentación" >}}
+
   {{< card
   "/images/BrewingCatsMain.jpg"
   "https://opensea.io/brewingcats"
