@@ -5,192 +5,155 @@
     <link>https://brewingcats.com/es/</link>
     <description>Recent content on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2020 18:50:41 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language>
+    <lastBuildDate>Sun, 17 May 2020 18:50:41 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Últimas Noticias</title>
       <link>https://brewingcats.com/es/posts/projects/uncategorized/latestnews/</link>
       <pubDate>Wed, 20 Oct 2021 11:55:10 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/uncategorized/latestnews/</guid>
       <description> Tweets by brewingcats Créditos de la Imagen: Unsplash: Editorial imagen de @amadorloureiroblanco Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
     <item>
       <title>Árbol de Enlaces</title>
       <link>https://brewingcats.com/es/posts/site/linktree/</link>
       <pubDate>Tue, 05 Oct 2021 17:20:17 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/linktree/</guid>
       <description>Lista de Contenido Promovido Haz Tu Viz Más Divertida con Animaciones Guía paso a paso de como reemplazar tus diapositivas de PowerPoint con un dashboard de Tableau para tu siguiente presentación Leer más Perfil de OpenSea Brewing Cats en OpenSea Leer más Proyectos NFT Aprende acerca de nuestros proyectos usando NFT Leer más Lotería Mexicana en NFT Primera Edición ¡Bienvenido al Juego de Lotería Mexicana en su version NFT! Leer más Ola Interpreting Sitio socio de Ola Interpreting LLC, traductores certificados Leer más HugoBelin.</description>
     </item>
-    
     <item>
       <title>Lotería Mexicana en NFT Primera Edición</title>
       <link>https://brewingcats.com/es/posts/projects/merchandise/nft/lottery/</link>
       <pubDate>Thu, 23 Sep 2021 15:43:50 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/merchandise/nft/lottery/</guid>
       <description>¡Bienvenido al Juego de Lotería Mexicana en su version NFT! El juego de la lotería, ampliamente difundido en México, es un juego de azar que consta de un mazo de 54 o 56 cartas y un número indefinido de tarjetas, por lo regular de 2 a 30 o más si participan muchas personas, llamadas &amp;ldquo;tablas&amp;rdquo; con 16 de dichas cartas escogidas aleatoriamente en una tabla de 4x4, aunque también existen más pequeñas de 3x3 para los niños o más grandes de 5x5.</description>
     </item>
-    
     <item>
       <title>Telemetría</title>
       <link>https://brewingcats.com/es/posts/site/telemetry/</link>
       <pubDate>Wed, 03 Feb 2021 21:38:12 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/telemetry/</guid>
       <description>Para poder medir nuestro criterio de exito en nuestro website (prover una experiencia deleitable a nuestros usuarios) necesitamos conocer y entender como es este sitio usado. Planeamos lograrlo mediante el uso de datos de telemetría, esta información nos proveerá detalles sobre problemas de usabilidad, el tipo de contenido que los usuarios gustan más así como otro tipo de problemas
 El uso de telemetría es una práctica común en la mayoría de sitios web, hoy en día ni siquiera se informa a los usuarios sobre esta práctica, mucho menos se les deja saber el uso que se da a esta información (por ejemplo el análisis que se da y si se vende para su uso en publicidad, o si se utiliza para generar un perfil individual y recolectar comportamiento sobre el usurio).</description>
     </item>
-    
     <item>
       <title>Creador de Polígonos</title>
       <link>https://brewingcats.com/es/posts/projects/software/polygonmaker/</link>
       <pubDate>Tue, 15 Dec 2020 18:13:15 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/polygonmaker/</guid>
       <description>En este artículo encontrarás que puedes dibujar polígonos sobre la imagen de tu elección. Lo anterior tiene varias utilidades, en nuestro caso nos ha servido para obtener las coordenadas de los vértices para usarlas en visualizaciones de Tableau. Con las coordenadas de los vertices podemos dibujar polígonos sobre imagenes en Tableau con el propósito de crear zonas o áreas que pueden ser correlacionadas de distintas formas. Este artículo muestra un ejemplo del uso de polígonos</description>
     </item>
-    
     <item>
       <title>Legend of Zelda: Breath of the Wild</title>
       <link>https://brewingcats.com/es/posts/projects/gaming/botw/</link>
       <pubDate>Sat, 28 Nov 2020 22:41:02 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/gaming/botw/</guid>
       <description>LoZ: BOTW - Alfabeto personalizado Si has jugado Legend of Zelda: Breath of the Wild habrás notado que el juego tiene su propio alfabeto. Al buscar por respuestas encontré la equivalencia de caracteres y construí un generador de mensajes basados en los caracteres usados en el juego. Es muy sencillo, solo selecciona el estilo (azul/dorado), escribe tu mensaje y obten la equivalencia. Caracteres permitidos son a-z, 0-9, -, ., !, ?</description>
     </item>
-    
     <item>
       <title>Extractor de Código de Tableau Share</title>
       <link>https://brewingcats.com/es/posts/projects/software/tableauparser/</link>
       <pubDate>Thu, 20 Aug 2020 17:05:47 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/tableauparser/</guid>
       <description>Anteriormente creamos un shortcode para embeber Vizzes de Tableau en sitios web basados en el Framework de Hugo, el uso de este es bastante simple y conveniente, sin embargo para poder hacer uso de el necesitamos saber de antemano ciertos campos que extraemos manualmente del código para compartir que nos da Tableau. Abajo los pasos para obtener este código
 Añadiendo el ShortCode a tu Sitio Basado en Hugo Para agregar soporte para embeber vizzes de Tableau sencillamente copia nuestro shortcode en el siguiente directorio dentro de tu sitio /layouts/shortcodes/tableau.</description>
     </item>
-    
     <item>
       <title>Instaparser</title>
       <link>https://brewingcats.com/es/posts/projects/software/instaparser/</link>
       <pubDate>Sat, 08 Aug 2020 21:13:41 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/instaparser/</guid>
       <description>Note: Este contenido es obsoleto y lo hemos dejado como nota de referencia
-Sencilla utilidad para obtener ids the fotos de Instagram. Permite embeber fotos de Instagram en nuestra página web la cuál puede ser a su vez embebida en otros lugares (como Vizzes de Tableau 😉 )
+Sencilla utilidad para obtener ids the fotos de Instagram. Permite embeber fotos de Instagram en nuestra página web la cuál puede ser a su vez embebida en otros lugares (como Vizzes de Tableau &amp;#x1f609; )
 Instrucciones:
 Copie el URL de una foto de Instagram e ingréselo en el campo de abajo Podrá ver el fragmento que identifica la foto que puede ser usado con nuestro sitio especial de Instagram , puede agregar el siguiente fragmento a la URL ?</description>
     </item>
-    
     <item>
       <title>Acerca de</title>
       <link>https://brewingcats.com/es/posts/site/about/</link>
       <pubDate>Mon, 15 Jun 2020 16:30:11 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/about/</guid>
       <description>Brewing Cats Elaboramos Software Exquisito
 Brewing Cats LLC es una compañía pequeña e independiente que busca enriquecer la web con contenido de calidad en distintas areas. Sus dueños lo hacen por diversión pero de forma respetuosa. Las areas principales son el entretenimiento (películas, video juegos y más) y el desarrollo de software. Tenemos una visión especial de como debe de funcionar la web de modo que tratamos de poner el ejemplo</description>
     </item>
-    
     <item>
       <title>Política de Uso</title>
       <link>https://brewingcats.com/es/posts/site/policy/</link>
       <pubDate>Sun, 31 May 2020 17:34:44 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/policy/</guid>
       <description>Política de Uso Creemos en hacer el bien y no el mal. El uso de este sitio web implica que esta de acuerdo con los términos explicados abajo. Aclarado lo anterior Brewing Cats opera con cierta cantidad de información que se utilizada de diferentes formas para mejorar la funcionalidad del sitio web así como para permitir la interoperabilidad con otros sitios en la web. La información generada debida a su uso será utilizada de una forma justa y transparente, creemos que la información generada por un usuario dado puede ayudarnos a hacer este sitio web mejor, crear nuevas mejoras, optimizándolo, y permitiendo conocer inversiones clave.</description>
     </item>
-    
     <item>
       <title>Planes del Sitio</title>
       <link>https://brewingcats.com/es/posts/site/roadmap/</link>
       <pubDate>Tue, 05 May 2020 21:53:49 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/roadmap/</guid>
       <description>Este sitio web está construido sobre una librería en común que hemos nombrado Brewing Cats Core la cual es utilizada en otros sitios web. Esta contiene características y funcionalidad específica que hacen de Brewing Cats un mejor sitio web. Brewing Cats Core expande la funcionalidad básica del repositorio principal basado en Hugo que usa Ananke Theme Este artículo muestra el trabajo completado asi como funcionalidad que vendrá próximamente. Puede ver el progreso en los siguentes tableros de Coda :</description>
     </item>
-    
     <item>
       <title>Consultoría</title>
       <link>https://brewingcats.com/es/posts/projects/consulting/</link>
       <pubDate>Mon, 27 Apr 2020 22:58:10 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/consulting/</guid>
       <description> Servicios de Consultoría Ofrecemos servicios de consultoría en las siguientes areas:
 Creación de sitios web (manejo, codificación, hosting, telemetría, https, etc.) PowerShell, C#, Java, TypeScript Tableau básico Contáctenos para más información
 Créditos de la Imagen: Unsplash: Pluma sobre un cuaderno imagen de @faceline Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
     <item>
       <title>Créditos</title>
       <link>https://brewingcats.com/es/posts/site/credits/</link>
       <pubDate>Sat, 25 Apr 2020 19:46:32 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/credits/</guid>
       <description>Este artículo fué creado para reconocer el duro trabajo de los muchos desarrolladores que han hecho posible este sitio. Hosting, frameworks, todos reconocidos aqui:
 Hosting, Librerías, Frameworks y otras Technologías Loading… Media Unsplash: Beer Collection - Página Principal imagen de @rawpixel Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
     <item>
       <title>Bitacora de Cambios</title>
       <link>https://brewingcats.com/es/posts/site/changelog/</link>
       <pubDate>Sat, 25 Apr 2020 12:18:01 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/changelog/</guid>
       <description>Este artículo presenta una lista de cambios hechos al sitio web, tiene como objetivo llevar control del mismo
 Versión del Sitio Versión de Librería Nombre de la Versión 4.36 @@@ Políticas de Versión Mayor.Menor.Incremento | | |_______ Versión de Brewing Cats Core | |_____________ Nueva funcionalidad |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
 Convención de Nombres de Proyecto Los nombres de proyecto se toman de:
 Lista de personajes de Star Wars posteriormente: Lista de personajes legendarios de Star Wars posteriormente: Personajes de Star Wars: Caballeros de la Vieja República El Código de Proyecto será presentado de la siguiente forma:</description>
     </item>
-    
     <item>
       <title>Nuevo Jam Stack</title>
       <link>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</link>
       <pubDate>Sun, 19 Apr 2020 17:24:32 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</guid>
       <description>La versión anterior de brewingcats.com se construyó sobre un diferente JAM Stack , y en particular en un diferente Generador de Sitio Estático . Construir brewingcats.com sobre Gatsby nos permitió adquirir bastante experiencia y nos dejó hacer uso de nuestro conocimiento en React para aplicarlo al sitio. React es parte central de la estructura del sitio, además tuvimos la oportunidad de aprender el sistema de querying de GraphQL para llevar a cabo operaciones básicas</description>
     </item>
-    
     <item>
       <title>Artículo Inicial</title>
       <link>https://brewingcats.com/es/posts/projects/uncategorized/my-first-post/</link>
       <pubDate>Tue, 14 Apr 2020 16:18:49 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/uncategorized/my-first-post/</guid>
-      <description>Este artículo inicial ha sido escrito en Markdown 😄
+      <description>Este artículo inicial ha sido escrito en Markdown &amp;#x1f604;
 Lista de elementos a evaluar:
-✅ Inserción de JavaScript personalizado que incluya: ✅ Vizzes embebidas de Tableau (se logra con parciales) ✅ Instagram embebido ( built-in shortcode ) ✅ Tablas de AirTable embebidas ✅ Telemetría personalizada ( librerías con frontmatter ) ✅ Google Ads (via parciales ) ✅ Comentarios via Disqus (soporte nativo) ✅ Share This botones solciales (via parciales) ✅ Google Analytics (via parciales) ✅ Giphy embebido (via parciales) ✅ Soporte multi-lenguage (soporte nativo) Contenidos:</description>
+&amp;#x2705; Inserción de JavaScript personalizado que incluya: &amp;#x2705; Vizzes embebidas de Tableau (se logra con parciales) &amp;#x2705; Instagram embebido ( built-in shortcode ) &amp;#x2705; Tablas de AirTable embebidas &amp;#x2705; Telemetría personalizada ( librerías con frontmatter ) &amp;#x2705; Google Ads (via parciales ) &amp;#x2705; Comentarios via Disqus (soporte nativo) &amp;#x2705; Share This botones solciales (via parciales) &amp;#x2705; Google Analytics (via parciales) &amp;#x2705; Giphy embebido (via parciales) &amp;#x2705; Soporte multi-lenguage (soporte nativo) Contenidos:</description>
     </item>
-    
     <item>
       <title>Instagram</title>
       <link>https://brewingcats.com/es/posts/instagram/</link>
       <pubDate>Tue, 14 Jan 2020 12:52:28 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/instagram/</guid>
       <description>Instagram-Articulo-Embebido</description>
     </item>
-    
     <item>
       <title>Redirector</title>
       <link>https://brewingcats.com/es/posts/projects/graficos/redirector/</link>
       <pubDate>Tue, 12 Mar 2019 23:12:29 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/graficos/redirector/</guid>
       <description>Cargando destino&amp;hellip;</description>
     </item>
-    
     <item>
       <title>Botw Signs</title>
       <link>https://brewingcats.com/es/posts/projects/software/botwsign/</link>
       <pubDate>Tue, 11 Jan 2000 19:30:13 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/botwsign/</guid>
       <description> </description>
     </item>
-    
   </channel>
 </rss>

@@ -5,16 +5,15 @@
     <link>https://brewingcats.com/es/posts/projects/gaming/</link>
     <description>Recent content in Videojuegos on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2020 21:48:59 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/posts/projects/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language>
+    <lastBuildDate>Fri, 15 May 2020 21:48:59 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/es/posts/projects/gaming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Legend of Zelda: Breath of the Wild</title>
       <link>https://brewingcats.com/es/posts/projects/gaming/botw/</link>
       <pubDate>Sat, 28 Nov 2020 22:41:02 -0800</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/gaming/botw/</guid>
       <description>LoZ: BOTW - Alfabeto personalizado Si has jugado Legend of Zelda: Breath of the Wild habrás notado que el juego tiene su propio alfabeto. Al buscar por respuestas encontré la equivalencia de caracteres y construí un generador de mensajes basados en los caracteres usados en el juego. Es muy sencillo, solo selecciona el estilo (azul/dorado), escribe tu mensaje y obten la equivalencia. Caracteres permitidos son a-z, 0-9, -, ., !, ?</description>
     </item>
-    
   </channel>
 </rss>

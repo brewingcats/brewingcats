@@ -5,57 +5,48 @@
     <link>https://brewingcats.com/es/tags/sitio/</link>
     <description>Recent content in sitio on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2020 16:30:11 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/tags/sitio/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language>
+    <lastBuildDate>Mon, 15 Jun 2020 16:30:11 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/es/tags/sitio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acerca de</title>
       <link>https://brewingcats.com/es/posts/site/about/</link>
       <pubDate>Mon, 15 Jun 2020 16:30:11 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/about/</guid>
       <description>Brewing Cats Elaboramos Software Exquisito
 Brewing Cats LLC es una compañía pequeña e independiente que busca enriquecer la web con contenido de calidad en distintas areas. Sus dueños lo hacen por diversión pero de forma respetuosa. Las areas principales son el entretenimiento (películas, video juegos y más) y el desarrollo de software. Tenemos una visión especial de como debe de funcionar la web de modo que tratamos de poner el ejemplo</description>
     </item>
-    
     <item>
       <title>Política de Uso</title>
       <link>https://brewingcats.com/es/posts/site/policy/</link>
       <pubDate>Sun, 31 May 2020 17:34:44 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/policy/</guid>
       <description>Política de Uso Creemos en hacer el bien y no el mal. El uso de este sitio web implica que esta de acuerdo con los términos explicados abajo. Aclarado lo anterior Brewing Cats opera con cierta cantidad de información que se utilizada de diferentes formas para mejorar la funcionalidad del sitio web así como para permitir la interoperabilidad con otros sitios en la web. La información generada debida a su uso será utilizada de una forma justa y transparente, creemos que la información generada por un usuario dado puede ayudarnos a hacer este sitio web mejor, crear nuevas mejoras, optimizándolo, y permitiendo conocer inversiones clave.</description>
     </item>
-    
     <item>
       <title>Planes del Sitio</title>
       <link>https://brewingcats.com/es/posts/site/roadmap/</link>
       <pubDate>Tue, 05 May 2020 21:53:49 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/roadmap/</guid>
       <description>Este sitio web está construido sobre una librería en común que hemos nombrado Brewing Cats Core la cual es utilizada en otros sitios web. Esta contiene características y funcionalidad específica que hacen de Brewing Cats un mejor sitio web. Brewing Cats Core expande la funcionalidad básica del repositorio principal basado en Hugo que usa Ananke Theme Este artículo muestra el trabajo completado asi como funcionalidad que vendrá próximamente. Puede ver el progreso en los siguentes tableros de Coda :</description>
     </item>
-    
     <item>
       <title>Créditos</title>
       <link>https://brewingcats.com/es/posts/site/credits/</link>
       <pubDate>Sat, 25 Apr 2020 19:46:32 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/credits/</guid>
       <description>Este artículo fué creado para reconocer el duro trabajo de los muchos desarrolladores que han hecho posible este sitio. Hosting, frameworks, todos reconocidos aqui:
 Hosting, Librerías, Frameworks y otras Technologías Loading… Media Unsplash: Beer Collection - Página Principal imagen de @rawpixel Créditos de la Imagen: Unsplash: Mac Keyboard imagen de @fantasyflip Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
     <item>
       <title>Bitacora de Cambios</title>
       <link>https://brewingcats.com/es/posts/site/changelog/</link>
       <pubDate>Sat, 25 Apr 2020 12:18:01 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/site/changelog/</guid>
       <description>Este artículo presenta una lista de cambios hechos al sitio web, tiene como objetivo llevar control del mismo
 Versión del Sitio Versión de Librería Nombre de la Versión 4.36 @@@ Políticas de Versión Mayor.Menor.Incremento | | |_______ Versión de Brewing Cats Core | |_____________ Nueva funcionalidad |___________________ Liberación oficial de nueva funcionalidad (Incluyde nuevo código de proyecto)
 Convención de Nombres de Proyecto Los nombres de proyecto se toman de:
 Lista de personajes de Star Wars posteriormente: Lista de personajes legendarios de Star Wars posteriormente: Personajes de Star Wars: Caballeros de la Vieja República El Código de Proyecto será presentado de la siguiente forma:</description>
     </item>
-    
   </channel>
 </rss>

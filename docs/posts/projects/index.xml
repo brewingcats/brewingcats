@@ -5,18 +5,17 @@
     <link>https://brewingcats.com/posts/projects/</link>
     <description>Recent content in Projects on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 18:40:29 -0700</lastBuildDate><atom:link href="https://brewingcats.com/posts/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 02 May 2020 18:40:29 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/posts/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consulting</title>
       <link>https://brewingcats.com/posts/projects/consulting/</link>
       <pubDate>Mon, 27 Apr 2020 22:58:07 -0700</pubDate>
-      
       <guid>https://brewingcats.com/posts/projects/consulting/</guid>
       <description> Consulting Services We offer consultation services for the following:
 Website building (management, coding, hosting, telemetry, https, etc.) PowerShell, C#, Java, TypeScript Basic Tableau Contact us for more information
 Image Credits: Unsplash: Pen on a notebook image by @faceline Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
   </channel>
 </rss>

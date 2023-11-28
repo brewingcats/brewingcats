@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,7 +7,7 @@
     <title>Extractor de Código de Tableau Share | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Utilidad básica para extraer los campos necesarios del código para compartir de Tableau con el objetivo de usarlos con nuestro shortcode para embeber Tableau">
-    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Hugo 0.120.4">
     
     
     
@@ -37,6 +37,7 @@
 <meta property="og:url" content="https://brewingcats.com/es/posts/projects/software/tableauparser/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-08-20T17:05:47-07:00" />
 <meta property="article:modified_time" content="2020-08-20T17:05:47-07:00" />
+
 <meta itemprop="name" content="Extractor de Código de Tableau Share">
 <meta itemprop="description" content="Utilidad básica para extraer los campos necesarios del código para compartir de Tableau con el objetivo de usarlos con nuestro shortcode para embeber Tableau"><meta itemprop="datePublished" content="2020-08-20T17:05:47-07:00" />
 <meta itemprop="dateModified" content="2020-08-20T17:05:47-07:00" />
@@ -266,7 +267,7 @@
       </a>
     
       
-      <a href="https://twitter.com/share?url=https://brewingcats.com/es/posts/projects/software/tableauparser/&amp;text=Extractor%20de%20C%c3%b3digo%20de%20Tableau%20Share" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+      <a href="https://twitter.com/intent/tweet?url=https://brewingcats.com/es/posts/projects/software/tableauparser/&amp;text=Extractor%20de%20C%c3%b3digo%20de%20Tableau%20Share" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
         
         <span class="icon"> <svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
 </span>
@@ -590,7 +591,7 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
     window.document.getElementById("workbookNameArea").innerText = workbookName;
     window.document.getElementById("worksheetNameArea").innerText = worksheetName;
 
-    let htmlPart = inputVal.split('<script ')[0];
+    let htmlPart = inputVal.split('\x3Cscript ')[0];
     window.document.getElementById('vizArea').innerHTML = htmlPart;
     let scriptPart = inputVal.split(`type='text/javascript'>`)[1].replace('/script>', '').replace(`<`, '');
     let scriptEl = window.document.createElement('script');
@@ -632,13 +633,13 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
   }
 
   function ResetValues() {
-    window.document.getElementById('vizIdArea').innerText = `"vacío"`;
-    window.document.getElementById('prefixIdArea').innerText = `"vacío"`;
-    window.document.getElementById('workbookNameArea').innerText = `"vacío"`;
-    window.document.getElementById('worksheetNameArea').innerText = `"vacío"`;
-    window.document.getElementById('shortcodeArea').innerText = `"vacío"`;
+    window.document.getElementById('vizIdArea').innerText = 'vacío';
+    window.document.getElementById('prefixIdArea').innerText = 'vacío';
+    window.document.getElementById('workbookNameArea').innerText = 'vacío';
+    window.document.getElementById('worksheetNameArea').innerText = 'vacío';
+    window.document.getElementById('shortcodeArea').innerText = 'vacío';
     if (window.document.getElementById('defaultVizLoaded') === null) {
-      window.document.getElementById('vizArea').innerHTML = `"\u003cdiv id='defaultVizLoaded'\u003e\u003c/div\u003e\u003cdiv class='tableauPlaceholder' id='viz1599000528258' style='position: relative'\u003e\u003cnoscript\u003e\u003ca href='#'\u003e\u003cimg alt=' ' src='https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1_rss.png' style='border: none' /\u003e\u003c/a\u003e\u003c/noscript\u003e\u003cobject class='tableauViz'  style='display:none;'\u003e\u003cparam name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /\u003e \u003cparam name='embed_code_version' value='3' /\u003e \u003cparam name='site_root' value='' /\u003e\u003cparam name='name' value='TableauDashboardSample\u0026#47;Dashboard1' /\u003e\u003cparam name='tabs' value='no' /\u003e\u003cparam name='toolbar' value='yes' /\u003e\u003cparam name='static_image' value='https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1.png' /\u003e \u003cparam name='animate_transition' value='yes' /\u003e\u003cparam name='display_static_image' value='yes' /\u003e\u003cparam name='display_spinner' value='yes' /\u003e\u003cparam name='display_overlay' value='yes' /\u003e\u003cparam name='display_count' value='yes' /\u003e\u003cparam name='language' value='en' /\u003e\u003cparam name='filter' value='publish=yes' /\u003e\u003c/object\u003e\u003c/div\u003e\u003cscript type='text/javascript'\u003evar divElement = document.getElementById('viz1599000528258');var vizElement = divElement.getElementsByTagName('object')[0];if ( divElement.offsetWidth \u003e 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth \u003e 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);\u003c/script\u003e"`;
+      window.document.getElementById('vizArea').innerHTML = '\u003cdiv id=\u0027defaultVizLoaded\u0027\u003e\u003c\/div\u003e\u003cdiv class=\u0027tableauPlaceholder\u0027 id=\u0027viz1599000528258\u0027 style=\u0027position: relative\u0027\u003e\u003cnoscript\u003e\u003ca href=\u0027#\u0027\u003e\u003cimg alt=\u0027 \u0027 src=\u0027https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1_rss.png\u0027 style=\u0027border: none\u0027 \/\u003e\u003c\/a\u003e\u003c\/noscript\u003e\u003cobject class=\u0027tableauViz\u0027  style=\u0027display:none;\u0027\u003e\u003cparam name=\u0027host_url\u0027 value=\u0027https%3A%2F%2Fpublic.tableau.com%2F\u0027 \/\u003e \u003cparam name=\u0027embed_code_version\u0027 value=\u00273\u0027 \/\u003e \u003cparam name=\u0027site_root\u0027 value=\u0027\u0027 \/\u003e\u003cparam name=\u0027name\u0027 value=\u0027TableauDashboardSample\u0026#47;Dashboard1\u0027 \/\u003e\u003cparam name=\u0027tabs\u0027 value=\u0027no\u0027 \/\u003e\u003cparam name=\u0027toolbar\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027static_image\u0027 value=\u0027https:\u0026#47;\u0026#47;public.tableau.com\u0026#47;static\u0026#47;images\u0026#47;Ta\u0026#47;TableauDashboardSample\u0026#47;Dashboard1\u0026#47;1.png\u0027 \/\u003e \u003cparam name=\u0027animate_transition\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_static_image\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_spinner\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_overlay\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027display_count\u0027 value=\u0027yes\u0027 \/\u003e\u003cparam name=\u0027language\u0027 value=\u0027en\u0027 \/\u003e\u003cparam name=\u0027filter\u0027 value=\u0027publish=yes\u0027 \/\u003e\u003c\/object\u003e\u003c\/div\u003e\u003cscript type=\u0027text\/javascript\u0027\u003evar divElement = document.getElementById(\u0027viz1599000528258\u0027);var vizElement = divElement.getElementsByTagName(\u0027object\u0027)[0];if ( divElement.offsetWidth \u003e 800 ) { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=(divElement.offsetWidth*0.75)\u002b\u0027px\u0027;} else if ( divElement.offsetWidth \u003e 500 ) { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=(divElement.offsetWidth*0.75)\u002b\u0027px\u0027;} else { vizElement.style.width=\u0027100%\u0027;vizElement.style.height=\u0027827px\u0027;}var scriptElement = document.createElement(\u0027script\u0027);scriptElement.src = \u0027https:\/\/public.tableau.com\/javascripts\/api\/viz_v1.js\u0027;vizElement.parentNode.insertBefore(scriptElement, vizElement);\u003c\/script\u003e';
     }
   }
 
@@ -659,11 +660,11 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
     } else {
       new bootstrap.Tooltip(window.document.getElementById('parseButton')).show();
       let tooltipId = new bootstrap.Tooltip(window.document.getElementById('parseButton')).getAttribute('aria-describedby');
-      window.document.querySelector(`#${tooltipId} div.tooltip-inner`).innerText = `"Código Invalido"`;
+      window.document.querySelector(`#${tooltipId} div.tooltip-inner`).innerText = 'Código Invalido';
       window.document.getElementById('parseButton').classList.remove('btn-primary');
       window.document.getElementById('parseButton').classList.add('btn-danger');
-  
-      setTimeout(() => { 
+
+      setTimeout(() => {
         bootstrap.Tooltip.getInstance(window.document.getElementById('parseButton')).hide();
         window.document.getElementById('parseButton').classList.remove('btn-danger');
         window.document.getElementById('parseButton').classList.add('btn-primary');
@@ -824,11 +825,11 @@ La forma extraerá cuatro campos necesarios a partir del código pegado:</p>
     } else if ( divElement.offsetWidth > 500 ) {
       vizElement.style.width='100%';
       vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-    } else { 
+    } else {
       vizElement.style.width='100%';
       vizElement.style.height='827px';
     }
-    
+
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);

@@ -5,16 +5,15 @@
     <link>https://brewingcats.com/es/tags/software/</link>
     <description>Recent content in software on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 17:24:32 -0700</lastBuildDate><atom:link href="https://brewingcats.com/es/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language>
+    <lastBuildDate>Sun, 19 Apr 2020 17:24:32 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/es/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nuevo Jam Stack</title>
       <link>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</link>
       <pubDate>Sun, 19 Apr 2020 17:24:32 -0700</pubDate>
-      
       <guid>https://brewingcats.com/es/posts/projects/software/new-jam-stack/</guid>
       <description>La versión anterior de brewingcats.com se construyó sobre un diferente JAM Stack , y en particular en un diferente Generador de Sitio Estático . Construir brewingcats.com sobre Gatsby nos permitió adquirir bastante experiencia y nos dejó hacer uso de nuestro conocimiento en React para aplicarlo al sitio. React es parte central de la estructura del sitio, además tuvimos la oportunidad de aprender el sistema de querying de GraphQL para llevar a cabo operaciones básicas</description>
     </item>
-    
   </channel>
 </rss>

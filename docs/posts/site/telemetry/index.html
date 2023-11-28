@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,7 +7,7 @@
     <title>Telemetry | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Telemetry data, usage stats">
-    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Hugo 0.120.4">
     
     
     
@@ -37,6 +37,7 @@
 <meta property="og:url" content="https://brewingcats.com/posts/site/telemetry/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-03T21:38:07-08:00" />
 <meta property="article:modified_time" content="2021-02-03T21:38:07-08:00" />
+
 <meta itemprop="name" content="Telemetry">
 <meta itemprop="description" content="Telemetry data, usage stats"><meta itemprop="datePublished" content="2021-02-03T21:38:07-08:00" />
 <meta itemprop="dateModified" content="2021-02-03T21:38:07-08:00" />
@@ -363,7 +364,7 @@ line-height: 60px;
 padding-top: 4px;
 padding-right: 8px;
 padding-left: 3px;">1</span> We built a custom made telemetry collection and storage pipeline engine. We did not want to rely on third party telemetry providers so they don&rsquo;t have the temptation of using
-customer information for other purposes. As extra bonus we learned how to do it and had fun with it 😃</p>
+customer information for other purposes. As extra bonus we learned how to do it and had fun with it &#x1f603;</p>
 <p><span style="
 color: rgb(255, 153, 0);
 float: left;
@@ -511,10 +512,10 @@ below to disable telemetry generation</p>
   }
 </script>
 Your Client ID: <code tag-id="ClientId"></code>
- <script>
-   window.document.querySelector('code[tag-id="ClientId"]')
-     .innerHTML = window.localStorage.getItem('ClientId');
- </script></p>
+<script>
+  window.document.querySelector('code[tag-id="ClientId"]')
+    .innerHTML = window.localStorage.getItem('ClientId');
+</script></p>
 <p>
 <h3 style="text-align: center; color:rgb(255, 153, 0);">Current Month Stats</h3>
 
@@ -792,18 +793,18 @@ Your Client ID: <code tag-id="ClientId"></code>
 </div>
 </div></p>
 <p>Data Freshness: 
- 
- <code id="telemetry-freshness">Loading</code>
- <script>
-   (()=> {
-     window.BrewingCatsCore.TelemetryReader.getDataDir((d, s) => {
-       let currentId = window.BrewingCatsCore.TelemetryReader.getCurrentId();
-       currentId = `${window.BrewingCatsCore.Config.TelemetryDataEnv}-${currentId}`;
-       let currentDir = d.filter(i => i.Name.indexOf(currentId) != -1)[0];
-       document.getElementById('telemetry-freshness').innerHTML = currentDir.LastWriteTime.toLocaleString();
-     });
-   })();
- </script></p>
+
+<code id="telemetry-freshness">Loading</code>
+<script>
+  (()=> {
+    window.BrewingCatsCore.TelemetryReader.getDataDir((d, s) => {
+      let currentId = window.BrewingCatsCore.TelemetryReader.getCurrentId();
+      currentId = `${window.BrewingCatsCore.Config.TelemetryDataEnv}-${currentId}`;
+      let currentDir = d.filter(i => i.Name.indexOf(currentId) != -1)[0];
+      document.getElementById('telemetry-freshness').innerHTML = currentDir.LastWriteTime.toLocaleString();
+    });
+  })();
+</script></p>
 <p>
 <h4 style="text-align: center; color:rgb(255, 153, 0);">Monthly Users</h4>
 

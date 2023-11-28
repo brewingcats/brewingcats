@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,7 +7,7 @@
     <title>Posts | Brewing Cats</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="We brew delightful software">
-    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Hugo 0.120.4">
     
     
     
@@ -40,6 +40,7 @@
 <meta property="og:description" content="We brew delightful software" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://brewingcats.com/posts/" />
+
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="We brew delightful software"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -229,18 +230,19 @@
       
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center lh-copy mid-gray" style="max-width: 70em;"><p>Overall structure of our website, check out our sections below to see related posts</p>
-<div class="row container-fluid g-4">
+<div class="row row-cols-3 row-cols-md-3 g-4">
   
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects/graficos/" class="db grow">
+    <div class="card">
+      <a href="projects/graficos/" onclick="BrewingCatsCore.LinkActions.openLink('projects\/graficos\/', 'Graficos')" target="_blank">
         <img src="/images/content/projects/graficos/kitchenBlue.png" class="card-img-top" alt="image from Graficos">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects/graficos/" class="color-inherit dim link">
+          <a href="projects/graficos/" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/graficos\/', 'Graficos')" target="_blank">
             Graficos
           </a>
         </h5>
@@ -248,7 +250,10 @@
           Menus and interactive charts
           <small>
             <br>
-            <a href="projects/graficos/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects/graficos/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects\/graficos\/', 'Graficos')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -257,13 +262,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="site" class="db grow">
+    <div class="card">
+      <a href="site" onclick="BrewingCatsCore.LinkActions.openLink('site', 'Site')" target="_blank">
         <img src="/images/electronics.jpg" class="card-img-top" alt="image from Site">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="site" class="color-inherit dim link">
+          <a href="site" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('site', 'Site')" target="_blank">
             Site
           </a>
         </h5>
@@ -271,7 +277,10 @@
           Details about Brewing Cats site
           <small>
             <br>
-            <a href="site" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="site" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('site', 'Site')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -280,13 +289,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects" class="db grow">
+    <div class="card">
+      <a href="projects" onclick="BrewingCatsCore.LinkActions.openLink('projects', 'Projects')" target="_blank">
         <img src="/images/projects.jpg" class="card-img-top" alt="image from Projects">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects" class="color-inherit dim link">
+          <a href="projects" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects', 'Projects')" target="_blank">
             Projects
           </a>
         </h5>
@@ -294,7 +304,10 @@
           Projects we are working on
           <small>
             <br>
-            <a href="projects" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects', 'Projects')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -303,13 +316,14 @@
   <!--
 
 <div class="col">
-  <div class="card h-100" style="width: 24rem;">
-    <a href="projects/cars" class="db grow">
+  <div class="card">
+    <a href="projects/cars" onclick="BrewingCatsCore.LinkActions.openLink('projects\/cars', 'Cars')" target="_blank">
       <img src="/images/bmw01.jpg" class="card-img-top" alt="image from Cars">
     </a>
     <div class="card-body">
       <h5 class="card-title">
-        <a href="projects/cars" class="color-inherit dim link">
+        <a href="projects/cars" class="color-inherit dim link"
+        onclick="BrewingCatsCore.LinkActions.openLink('projects\/cars', 'Cars')" target="_blank">
           Cars
         </a>
       </h5>
@@ -317,7 +331,10 @@
         Check our thoughts and work regarding cars
         <small>
           <br>
-          <a href="projects/cars" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="projects/cars" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+          target="_blank"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/cars', 'Cars')"
+          >read more</a>
         </small>
       </p>
     </div>
@@ -326,13 +343,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects/gaming" class="db grow">
+    <div class="card">
+      <a href="projects/gaming" onclick="BrewingCatsCore.LinkActions.openLink('projects\/gaming', 'Gaming')" target="_blank">
         <img src="/images/controller.jpg" class="card-img-top" alt="image from Gaming">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects/gaming" class="color-inherit dim link">
+          <a href="projects/gaming" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/gaming', 'Gaming')" target="_blank">
             Gaming
           </a>
         </h5>
@@ -340,7 +358,10 @@
           Video games, reviews, etc.
           <small>
             <br>
-            <a href="projects/gaming" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects/gaming" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects\/gaming', 'Gaming')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -349,13 +370,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects/merchandise" class="db grow">
+    <div class="card">
+      <a href="projects/merchandise" onclick="BrewingCatsCore.LinkActions.openLink('projects\/merchandise', 'Merchandise')" target="_blank">
         <img src="/images/merchandise.jpg" class="card-img-top" alt="image from Merchandise">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects/merchandise" class="color-inherit dim link">
+          <a href="projects/merchandise" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/merchandise', 'Merchandise')" target="_blank">
             Merchandise
           </a>
         </h5>
@@ -363,7 +385,10 @@
           Our latest merchandise :)
           <small>
             <br>
-            <a href="projects/merchandise" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects/merchandise" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects\/merchandise', 'Merchandise')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -372,13 +397,14 @@
   <!--
 
 <div class="col">
-  <div class="card h-100" style="width: 24rem;">
-    <a href="projects/moviereviews" class="db grow">
+  <div class="card">
+    <a href="projects/moviereviews" onclick="BrewingCatsCore.LinkActions.openLink('projects\/moviereviews', 'Movie Reviews')" target="_blank">
       <img src="/images/movietheater.jpg" class="card-img-top" alt="image from Movie Reviews">
     </a>
     <div class="card-body">
       <h5 class="card-title">
-        <a href="projects/moviereviews" class="color-inherit dim link">
+        <a href="projects/moviereviews" class="color-inherit dim link"
+        onclick="BrewingCatsCore.LinkActions.openLink('projects\/moviereviews', 'Movie Reviews')" target="_blank">
           Movie Reviews
         </a>
       </h5>
@@ -386,7 +412,10 @@
         Personalized movie ratings
         <small>
           <br>
-          <a href="projects/moviereviews" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="projects/moviereviews" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+          target="_blank"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/moviereviews', 'Movie Reviews')"
+          >read more</a>
         </small>
       </p>
     </div>
@@ -395,13 +424,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects/software" class="db grow">
+    <div class="card">
+      <a href="projects/software" onclick="BrewingCatsCore.LinkActions.openLink('projects\/software', 'Software')" target="_blank">
         <img src="/images/softwareroadmap.jpg" class="card-img-top" alt="image from Software">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects/software" class="color-inherit dim link">
+          <a href="projects/software" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/software', 'Software')" target="_blank">
             Software
           </a>
         </h5>
@@ -409,7 +439,10 @@
           Developers, developers, developers!
           <small>
             <br>
-            <a href="projects/software" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects/software" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects\/software', 'Software')"
+            >read more</a>
           </small>
         </p>
       </div>
@@ -418,13 +451,14 @@
   
   
   <div class="col">
-    <div class="card h-100" style="width: 24rem;">
-      <a href="projects/uncategorized" class="db grow">
+    <div class="card">
+      <a href="projects/uncategorized" onclick="BrewingCatsCore.LinkActions.openLink('projects\/uncategorized', 'Uncategorized')" target="_blank">
         <img src="/images/mix.jpg" class="card-img-top" alt="image from Uncategorized">
       </a>
       <div class="card-body">
         <h5 class="card-title">
-          <a href="projects/uncategorized" class="color-inherit dim link">
+          <a href="projects/uncategorized" class="color-inherit dim link"
+          onclick="BrewingCatsCore.LinkActions.openLink('projects\/uncategorized', 'Uncategorized')" target="_blank">
             Uncategorized
           </a>
         </h5>
@@ -432,7 +466,10 @@
           Posts without category
           <small>
             <br>
-            <a href="projects/uncategorized" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+            <a href="projects/uncategorized" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+            target="_blank"
+            onclick="BrewingCatsCore.LinkActions.openLink('projects\/uncategorized', 'Uncategorized')"
+            >read more</a>
           </small>
         </p>
       </div>

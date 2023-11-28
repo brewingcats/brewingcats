@@ -5,26 +5,23 @@
     <link>https://brewingcats.com/tags/uncategorized/</link>
     <description>Recent content in uncategorized on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 20 Oct 2021 11:55:05 -0700</lastBuildDate><atom:link href="https://brewingcats.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Oct 2021 11:55:05 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Latest News</title>
       <link>https://brewingcats.com/posts/projects/uncategorized/latestnews/</link>
       <pubDate>Wed, 20 Oct 2021 11:55:05 -0700</pubDate>
-      
       <guid>https://brewingcats.com/posts/projects/uncategorized/latestnews/</guid>
       <description> Tweets by brewingcats Image Credits: Unsplash: Editorial image by @amadorloureiroblanco Site Views: 0 Page Views: 0 Your Site Views: 0 Your Page Views: 0 </description>
     </item>
-    
     <item>
       <title>First Post</title>
       <link>https://brewingcats.com/posts/projects/uncategorized/my-first-post/</link>
       <pubDate>Tue, 14 Apr 2020 16:18:49 -0700</pubDate>
-      
       <guid>https://brewingcats.com/posts/projects/uncategorized/my-first-post/</guid>
-      <description>This first post is written in Markdown. 😄 List of features to evaluate here:
-✅ Insertion of custom JavaScript this includes: ✅ Tableau embedded vizzes (use partials) ✅ Embedding Instagram ( built-in shortcode ) ✅ Embedding Airplay Boards (use partials) ✅ My own customized telemetry ( frontmatter library ) ✅ Google Ads (via partials ) ✅ Disqus commenting (via partials) ✅ Share This social buttons (use partials) ✅ Google Analytics (via partials) ✅ Embedding Giphy (via partials) ✅ Multi-language support Contents:</description>
+      <description>This first post is written in Markdown. &amp;#x1f604; List of features to evaluate here:
+&amp;#x2705; Insertion of custom JavaScript this includes: &amp;#x2705; Tableau embedded vizzes (use partials) &amp;#x2705; Embedding Instagram ( built-in shortcode ) &amp;#x2705; Embedding Airplay Boards (use partials) &amp;#x2705; My own customized telemetry ( frontmatter library ) &amp;#x2705; Google Ads (via partials ) &amp;#x2705; Disqus commenting (via partials) &amp;#x2705; Share This social buttons (use partials) &amp;#x2705; Google Analytics (via partials) &amp;#x2705; Embedding Giphy (via partials) &amp;#x2705; Multi-language support Contents:</description>
     </item>
-    
   </channel>
 </rss>

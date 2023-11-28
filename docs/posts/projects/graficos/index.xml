@@ -5,16 +5,15 @@
     <link>https://brewingcats.com/posts/projects/graficos/</link>
     <description>Recent content in Graficos on Brewing Cats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 11 Mar 2021 18:21:17 -0700</lastBuildDate><atom:link href="https://brewingcats.com/posts/projects/graficos/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Mar 2021 18:21:17 -0700</lastBuildDate>
+    <atom:link href="https://brewingcats.com/posts/projects/graficos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redirector</title>
       <link>https://brewingcats.com/posts/projects/graficos/redirector/</link>
       <pubDate>Tue, 12 Mar 2019 23:12:24 -0800</pubDate>
-      
       <guid>https://brewingcats.com/posts/projects/graficos/redirector/</guid>
       <description>Loading target&amp;hellip;</description>
     </item>
-    
   </channel>
 </rss>
